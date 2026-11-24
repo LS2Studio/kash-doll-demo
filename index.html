@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kash Doll | I'm The Prize Out Now</title>
-<meta name="description" content="Kash Doll. Detroit's own. New single I'm The Prize featuring Ebony Riley out now. The Last Doll album, BMF, tour dates and more.">
+<meta name="description" content="Kash Doll. Detroit's own. New single I'm The Prize featuring Ebony Riley out now, with Method Man in the video. The Last Doll, Stacked, Back on Dexter, BMF, tour dates and more.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#16130f;
@@ -18,8 +18,8 @@
   --gold:#d4af37;
   --gold-deep:#a8842a;
   --gold-soft:#e8c96a;
-  --pink:#e8a2b8;
   --muted:#b8ad97;
+  --muted-dark:#6d6350;
   --line:rgba(212,175,55,.28);
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -28,267 +28,287 @@ body{background:var(--ink);color:var(--cream);font-family:'Outfit',sans-serif;fo
 ::selection{background:var(--gold);color:var(--ink)}
 a{color:var(--gold);text-decoration:none}
 img{max-width:100%;display:block}
-h1,h2,h3,.black{font-family:'Archivo Black',sans-serif;font-weight:400;line-height:.95;letter-spacing:-.01em}
-.hand{font-family:'Caveat',cursive;font-weight:600;line-height:1.1}
-.eyebrow{font-family:'Outfit',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:'Archivo Black',sans-serif;font-weight:400;line-height:.98;letter-spacing:-.01em}
+.eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
 .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
-section{position:relative;padding:96px 0}
-.btn{display:inline-block;background:var(--gold);color:var(--ink);font-family:'Outfit',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;padding:15px 32px;border:2px solid var(--gold);transition:.25s;transform:rotate(-.6deg)}
-.btn:hover{background:transparent;color:var(--gold);transform:rotate(0)}
-.btn-ghost{display:inline-block;background:transparent;color:var(--gold);font-family:'Outfit',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;padding:15px 32px;border:2px solid var(--gold);transition:.25s;transform:rotate(.5deg)}
-.btn-ghost:hover{background:var(--gold);color:var(--ink);transform:rotate(0)}
-
-/* paper grain over everything */
-.grain{position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='300' height='300' filter='url(%23n)' opacity='0.7'/></svg>")}
-
-/* torn edge divider */
-.torn{display:block;line-height:0;margin-bottom:-1px}
-.torn svg{width:100%;height:34px;display:block}
-.torn-cream svg path{fill:var(--cream)}
-.torn-ink svg path{fill:var(--ink)}
-.torn-gold svg path{fill:var(--gold)}
-
-/* tape strips */
-.tape{position:absolute;width:110px;height:30px;background:rgba(232,201,106,.78);box-shadow:0 2px 6px rgba(0,0,0,.3);z-index:6;clip-path:polygon(2% 8%,98% 0,100% 88%,0 100%)}
-.tape.pink{background:rgba(232,162,184,.8)}
-
-/* polaroid */
-.polaroid{background:var(--cream);padding:12px 12px 16px;box-shadow:0 22px 44px rgba(0,0,0,.55)}
-.polaroid .cap{font-family:'Caveat',cursive;font-weight:600;font-size:1.5rem;color:var(--ink);text-align:center;margin-top:10px;line-height:1}
-
-/* sticker badge */
-.sticker{position:absolute;width:118px;height:118px;border-radius:50%;background:var(--gold);color:var(--ink);display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Archivo Black',sans-serif;font-size:.78rem;line-height:1.35;letter-spacing:.04em;transform:rotate(12deg);box-shadow:0 12px 26px rgba(0,0,0,.5);border:2px dashed var(--ink);outline:4px solid var(--gold);z-index:7;padding:10px}
-
-/* circled word */
-.circled{position:relative;display:inline-block;white-space:nowrap}
-.circled svg{position:absolute;left:-6%;top:-14%;width:112%;height:128%;overflow:visible;pointer-events:none}
-.circled svg path{fill:none;stroke:var(--gold);stroke-width:5;stroke-linecap:round;opacity:.95}
-
-/* section header: big black type + handwritten annotation */
-.sec-head{position:relative;margin-bottom:40px}
-.sec-head h2{font-size:clamp(2.6rem,7.5vw,5rem);text-transform:uppercase}
+section{padding:88px 0}
+.btn{display:inline-block;background:var(--gold);color:var(--ink);font-weight:700;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;padding:15px 32px;border:2px solid var(--gold);transition:.25s}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn-ghost{display:inline-block;background:transparent;color:var(--gold);font-weight:600;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;padding:15px 32px;border:2px solid var(--gold);transition:.25s}
+.btn-ghost:hover{background:var(--gold);color:var(--ink)}
+.sec-head{margin-bottom:44px}
+.sec-head h2{font-size:clamp(2.4rem,6.5vw,4.4rem);text-transform:uppercase;margin-top:14px}
 .sec-head h2 em{font-style:normal;color:var(--gold)}
-.sec-head .scribble{font-family:'Caveat',cursive;font-weight:600;font-size:clamp(1.4rem,3vw,1.9rem);color:var(--gold-soft);transform:rotate(-2deg);display:inline-block;margin-top:6px}
+.sec-head p.sub{color:var(--muted);max-width:640px;margin-top:14px;font-size:1.02rem}
 .on-cream .sec-head h2 em{color:var(--gold-deep)}
-.on-cream .sec-head .scribble{color:var(--gold-deep)}
+.on-cream .sec-head p.sub{color:var(--muted-dark)}
+.on-cream .eyebrow{color:var(--gold-deep)}
 
 /* disclaimer */
-.disclaimer{background:var(--gold);color:var(--ink);text-align:center;font-family:'Outfit',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;padding:10px 14px;position:relative;z-index:10001}
+.disclaimer{background:var(--gold);color:var(--ink);text-align:center;font-weight:700;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;padding:10px 14px;position:relative;z-index:10001}
 
 /* nav */
-nav{position:sticky;top:0;z-index:1000;background:rgba(14,12,9,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:0;z-index:1000;background:rgba(14,12,9,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav-in{max-width:1200px;margin:0 auto;padding:0 22px;height:66px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:'Archivo Black',sans-serif;font-size:1.25rem;letter-spacing:.02em;color:var(--cream);transform:rotate(-1.2deg)}
+.logo{font-family:'Archivo Black',sans-serif;font-size:1.25rem;color:var(--cream)}
 .logo span{color:var(--gold)}
-.logo small{display:block;font-family:'Caveat',cursive;font-size:.95rem;color:var(--gold-soft);letter-spacing:0;line-height:.8;margin-top:2px}
-.nav-links{display:flex;gap:26px;list-style:none}
-.nav-links a{color:var(--cream);font-size:.78rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;transition:.2s}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{color:var(--cream);font-size:.74rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;transition:.2s}
 .nav-links a:hover{color:var(--gold)}
-@media(max-width:820px){.nav-links{display:none}}
+@media(max-width:900px){.nav-links{display:none}}
 
 /* hero */
-.hero{padding:64px 0 110px;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px 48px;align-items:start}
-.hero-kicker{margin-bottom:20px}
-.hero h1{font-size:clamp(3.6rem,11.5vw,7.6rem);text-transform:uppercase;transform:rotate(-1deg)}
-.hero h1 .line2{display:block;color:var(--gold);margin-left:8%}
-.hero .feat{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(1.7rem,4vw,2.4rem);color:var(--pink);transform:rotate(-3deg);display:inline-block;margin-top:10px;margin-left:22%}
-.hero-sub{max-width:480px;margin:30px 0 8px 14%;font-size:1.08rem;color:var(--muted)}
+.hero{position:relative;padding:0;min-height:88vh;display:flex;align-items:flex-end;background:#0e0c09}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(to top,rgba(14,12,9,.97) 8%,rgba(14,12,9,.55) 45%,rgba(14,12,9,.35) 100%),url("kash-doll-2021.png");background-size:cover;background-position:center 18%}
+.hero-in{position:relative;width:100%;padding:120px 0 64px}
+.hero-badge{display:inline-block;background:var(--gold);color:var(--ink);font-weight:700;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;padding:8px 16px;margin-bottom:22px}
+.hero h1{font-size:clamp(3.4rem,11vw,7.4rem);text-transform:uppercase}
+.hero h1 .gold{color:var(--gold)}
+.hero .feat{font-size:clamp(1.2rem,3vw,1.7rem);font-weight:600;color:var(--cream);margin-top:14px}
+.hero .feat span{color:var(--gold)}
+.hero-sub{max-width:620px;margin:20px 0 28px;color:#d8cfba;font-size:1.05rem}
 .hero-sub strong{color:var(--cream);font-weight:600}
-.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 0 14%;position:relative}
-.hero-arrow{position:absolute;left:-64px;top:-38px;width:58px;transform:rotate(18deg)}
-.hero-arrow path{fill:none;stroke:var(--gold);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
-.hero-stats{display:flex;gap:44px;margin-top:52px;flex-wrap:wrap}
-.stat:nth-child(2){margin-top:18px;transform:rotate(1.5deg)}
-.stat:nth-child(3){transform:rotate(-1.5deg)}
-.stat b{display:block;font-family:'Archivo Black',sans-serif;font-size:2rem;color:var(--gold);line-height:1}
-.stat span{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.hero-art{position:relative;margin-top:44px}
-.hero-art .main-polaroid{transform:rotate(2.5deg)}
-.hero-art .tape.t1{top:-14px;left:24px;transform:rotate(-6deg)}
-.hero-art .tape.t2{bottom:52px;right:-12px;transform:rotate(38deg)}
-.hero-art .single-art{position:absolute;left:-52px;bottom:-52px;width:172px;border:3px solid var(--cream);transform:rotate(-7deg);box-shadow:0 18px 40px rgba(0,0,0,.65);z-index:5}
-.hero-art .sticker{top:-46px;right:6px}
-@media(max-width:820px){
-  .hero-grid{grid-template-columns:1fr}
-  .hero-sub,.hero-cta{margin-left:0}
-  .hero .feat{margin-left:8%}
-  .hero-art{margin-top:34px}
-  .hero-art .single-art{width:120px;left:-6px;bottom:-34px}
-  .hero-art .sticker{width:96px;height:96px;font-size:.66rem;top:-36px}
-  .hero-arrow{display:none}
-}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-stats{display:flex;gap:48px;flex-wrap:wrap;margin-top:52px;padding-top:28px;border-top:1px solid rgba(212,175,55,.35)}
+.stat b{display:block;font-family:'Archivo Black',sans-serif;font-size:1.9rem;color:var(--gold);line-height:1}
+.stat span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 
 /* marquee */
-.marquee{background:var(--gold);color:var(--ink);overflow:hidden;padding:16px 0;transform:rotate(-.7deg) scale(1.02);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
-.marquee-track{display:flex;width:max-content;animation:scroll 30s linear infinite;align-items:baseline}
-.marquee-track .solid{font-family:'Archivo Black',sans-serif;font-size:1.35rem;text-transform:uppercase;white-space:nowrap;padding:0 20px}
-.marquee-track .outline{font-family:'Archivo Black',sans-serif;font-size:1.35rem;text-transform:uppercase;white-space:nowrap;padding:0 20px;color:transparent;-webkit-text-stroke:1.5px var(--ink)}
-.marquee-track .hand{font-size:1.9rem;white-space:nowrap;padding:0 20px;transform:rotate(-2deg);display:inline-block}
-.marquee-track .star{font-size:1.1rem;padding:0 6px}
+.marquee{background:var(--gold);color:var(--ink);overflow:hidden;padding:15px 0}
+.marquee-track{display:flex;width:max-content;animation:scroll 32s linear infinite;align-items:baseline}
+.marquee-track span{font-family:'Archivo Black',sans-serif;font-size:1.15rem;text-transform:uppercase;white-space:nowrap;padding:0 22px}
+.marquee-track .star{font-size:1rem;padding:0 4px}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* album, cream page */
-.album{background:var(--cream);color:var(--ink);padding-top:70px}
-.album .eyebrow{color:var(--gold-deep)}
-.album-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:60px;align-items:start}
-.album-art{position:relative;transform:rotate(-2deg)}
-.album-art .tape.t1{top:-14px;right:30px;transform:rotate(8deg)}
-.album-art .tape.t2{bottom:44px;left:-14px;transform:rotate(-32deg)}
-.album h2{font-size:clamp(2.6rem,6vw,4.2rem);text-transform:uppercase;margin:14px 0 18px}
-.album h2 em{font-style:normal;color:var(--gold-deep)}
-.album p{color:#4a4234;max-width:560px}
-.album p strong{color:var(--ink);font-weight:600}
-.album-facts{display:flex;gap:34px;flex-wrap:wrap;margin:28px 0 8px;padding:20px 0;border-top:2px solid rgba(22,19,15,.18);border-bottom:2px solid rgba(22,19,15,.18)}
-.album-facts div b{display:block;font-family:'Archivo Black',sans-serif;font-size:1.2rem;color:var(--gold-deep)}
-.album-facts div span{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#6d6350}
-.album .btn{margin-top:26px}
-.track-index{margin-top:84px}
-.track-index h3{font-family:'Archivo Black',sans-serif;font-size:1.7rem;text-transform:uppercase;letter-spacing:.01em}
-.track-index .ti-sub{color:#6d6350;font-size:.95rem;margin:8px 0 34px;max-width:520px}
-.track-index .ti-sub .hand{font-size:1.35rem;color:var(--gold-deep)}
-.tracks{display:grid;grid-template-columns:1.15fr .85fr;gap:0 64px}
-.tracks-col.right{margin-top:44px}
-.track{display:flex;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid rgba(22,19,15,.16)}
-.track .n{font-family:'Archivo Black',sans-serif;font-size:1.3rem;color:var(--gold-deep);min-width:38px}
-.track .t{font-weight:600;font-size:1.05rem;letter-spacing:.01em}
-.track .f{color:#6d6350;font-size:.85rem}
-.track .len{margin-left:auto;color:#6d6350;font-size:.85rem;white-space:nowrap}
-@media(max-width:820px){
-  .album-grid{grid-template-columns:1fr}
-  .tracks{grid-template-columns:1fr}
-  .tracks-col.right{margin-top:0}
-}
-
-/* quote band, solid gold page */
-.quote-band{background:var(--gold);color:var(--ink);padding:88px 0;text-align:left;overflow:hidden}
-.quote-band .big-quote{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(2.1rem,5.4vw,3.6rem);line-height:1.15;max-width:900px;transform:rotate(-.8deg)}
-.quote-band .big-quote .hl{background:var(--ink);color:var(--gold);padding:0 10px;display:inline-block;transform:rotate(1deg)}
-.quote-band .attr{margin-top:26px;font-family:'Archivo Black',sans-serif;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase}
-.quote-band .attr span{font-family:'Caveat',cursive;font-size:1.4rem;letter-spacing:0;text-transform:none;display:block;margin-top:4px}
+/* feature box (I'm The Prize) */
+.feature{background:var(--ink2)}
+.feature-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:start}
+.frame{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;background:#000;border:1px solid var(--line)}
+.frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.feature h2{font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;margin:14px 0 18px}
+.feature h2 em{font-style:normal;color:var(--gold)}
+.feature p{color:var(--muted);margin-bottom:14px}
+.feature p strong{color:var(--cream);font-weight:600}
+.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin:26px 0}
+.fact-grid div{background:var(--ink3);padding:18px 20px}
+.fact-grid b{display:block;font-family:'Archivo Black',sans-serif;font-size:1.05rem;color:var(--gold);line-height:1.2}
+.fact-grid span{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.quote{border-left:3px solid var(--gold);padding:6px 0 6px 20px;margin:24px 0}
+.quote p{color:var(--cream);font-size:1.12rem;font-weight:400;line-height:1.5;margin-bottom:8px}
+.quote small{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:860px){.feature-grid{grid-template-columns:1fr}}
 
 /* videos */
-.videos-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:40px;align-items:start}
-.video-card .frame{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border:3px solid var(--cream);background:#000;box-shadow:0 22px 44px rgba(0,0,0,.5)}
-.video-card .frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
-.video-card.main .frame{transform:rotate(-1.2deg)}
-.video-card.second{margin-top:64px}
-.video-card.second .frame{transform:rotate(1.4deg)}
-.video-card h3{font-size:1.35rem;margin:20px 0 6px;text-transform:uppercase}
+.videos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.video-card h3{font-size:1.15rem;text-transform:uppercase;margin:16px 0 6px}
 .video-card h3 span{color:var(--gold)}
-.video-card p{color:var(--muted);font-size:.95rem}
-.video-card .watch{display:inline-block;margin-top:12px;font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;border-bottom:2px solid var(--gold);padding-bottom:2px}
-.video-note{font-family:'Caveat',cursive;font-weight:600;font-size:1.6rem;color:var(--gold-soft);transform:rotate(-1.5deg);margin-top:44px;max-width:560px}
-.video-note small{display:block;font-family:'Outfit',sans-serif;font-weight:400;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:8px}
-@media(max-width:820px){.videos-grid{grid-template-columns:1fr}.video-card.second{margin-top:20px}}
+.video-card p{color:var(--muted);font-size:.92rem}
+.video-card .meta{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+.video-card .watch{display:inline-block;margin-top:8px;font-size:.76rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;border-bottom:2px solid var(--gold);padding-bottom:2px}
+@media(max-width:860px){.videos-grid{grid-template-columns:1fr}}
 
-/* roots, full-bleed photo page */
-.roots{background-color:var(--ink2);background-image:linear-gradient(rgba(14,12,9,.9),rgba(14,12,9,.82)),url("https://upload.wikimedia.org/wikipedia/commons/0/0b/Kash_Doll_in_2021.png");background-size:cover;background-position:center top;background-attachment:scroll}
-.roots-inner{max-width:780px;margin-left:auto}
-.roots h2{font-size:clamp(2.6rem,7vw,4.6rem);text-transform:uppercase;margin:14px 0 8px}
+/* gallery */
+.gallery{background:var(--ink2)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.g-item{position:relative;overflow:hidden}
+.g-item img{width:100%;height:300px;object-fit:cover;transition:transform .4s}
+.g-item:hover img{transform:scale(1.04)}
+.g-item .cap{position:absolute;left:0;right:0;bottom:0;padding:36px 16px 14px;background:linear-gradient(to top,rgba(14,12,9,.92),transparent)}
+.g-item .cap b{display:block;font-size:.95rem;font-weight:600;color:var(--cream)}
+.g-item .cap span{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+@media(max-width:860px){.gallery-grid{grid-template-columns:1fr 1fr}.g-item img{height:220px}}
+@media(max-width:520px){.gallery-grid{grid-template-columns:1fr}}
+
+/* album feature, cream */
+.album{background:var(--cream);color:var(--ink)}
+.album-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.album-art img{width:100%;box-shadow:0 24px 48px rgba(0,0,0,.28)}
+.album h2{font-size:clamp(2.4rem,5.5vw,3.8rem);text-transform:uppercase;margin:14px 0 18px}
+.album h2 em{font-style:normal;color:var(--gold-deep)}
+.album p{color:#4a4234}
+.album p strong{color:var(--ink);font-weight:600}
+.album-facts{display:flex;gap:32px;flex-wrap:wrap;margin:26px 0;padding:20px 0;border-top:2px solid rgba(22,19,15,.18);border-bottom:2px solid rgba(22,19,15,.18)}
+.album-facts b{display:block;font-family:'Archivo Black',sans-serif;font-size:1.15rem;color:var(--gold-deep)}
+.album-facts span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-dark)}
+.album .quote{border-left-color:var(--gold-deep)}
+.album .quote p{color:var(--ink)}
+.album .quote small{color:var(--muted-dark)}
+.track-index{margin-top:64px}
+.track-index h3{font-size:1.5rem;text-transform:uppercase}
+.track-index .ti-sub{color:var(--muted-dark);font-size:.95rem;margin:8px 0 28px;max-width:560px}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.track{display:flex;align-items:baseline;gap:14px;padding:12px 0;border-bottom:1px solid rgba(22,19,15,.16)}
+.track .n{font-family:'Archivo Black',sans-serif;font-size:1.05rem;color:var(--gold-deep);min-width:32px}
+.track .t{font-weight:600;font-size:1rem}
+.track .f{color:var(--muted-dark);font-size:.85rem}
+.track .len{margin-left:auto;color:var(--muted-dark);font-size:.85rem;white-space:nowrap}
+@media(max-width:860px){.album-grid{grid-template-columns:1fr}.tracks{grid-template-columns:1fr}}
+
+/* discography cards */
+.disco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.d-card{background:var(--ink3);border:1px solid var(--line);display:flex;flex-direction:column}
+.d-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.d-card .d-type{height:0;padding-bottom:100%;background:linear-gradient(135deg,#241f18,#0e0c09);display:flex;align-items:center;justify-content:center;position:relative}
+.d-card .d-type span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Archivo Black',sans-serif;font-size:1.5rem;text-transform:uppercase;color:var(--gold);padding:20px;line-height:1.15}
+.d-body{padding:22px 22px 26px;display:flex;flex-direction:column;flex:1}
+.d-body .tag{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.d-body h3{font-size:1.3rem;text-transform:uppercase;margin:8px 0 10px}
+.d-body p{color:var(--muted);font-size:.92rem;flex:1}
+.d-body p strong{color:var(--cream);font-weight:600}
+.d-body .d-meta{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.d-body .d-meta b{color:var(--gold)}
+@media(max-width:900px){.disco-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.disco-grid{grid-template-columns:1fr}}
+
+/* stacked + dexter tracklists */
+.mini-lists{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:64px}
+.mini-lists h3{font-size:1.3rem;text-transform:uppercase;margin-bottom:6px}
+.mini-lists h3 span{color:var(--gold)}
+.mini-lists .ml-sub{color:var(--muted);font-size:.9rem;margin-bottom:20px}
+.mini-lists .track{border-bottom-color:rgba(212,175,55,.16)}
+.mini-lists .track .n{color:var(--gold)}
+.mini-lists .track .t{color:var(--cream)}
+.mini-lists .track .f,.mini-lists .track .len{color:var(--muted)}
+@media(max-width:860px){.mini-lists{grid-template-columns:1fr}}
+
+/* singles grid */
+.singles{background:var(--ink2)}
+.s-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.s-card{background:var(--ink3);border:1px solid var(--line)}
+.s-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.s-card .s-body{padding:16px 18px 20px}
+.s-card h3{font-size:1rem;text-transform:uppercase}
+.s-card h3 span{color:var(--gold)}
+.s-card p{color:var(--muted);font-size:.85rem;margin-top:6px}
+.s-card .s-meta{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+@media(max-width:900px){.s-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.s-grid{grid-template-columns:1fr}}
+.feat-row{margin-top:44px}
+.feat-row h3{font-size:1.3rem;text-transform:uppercase;margin-bottom:20px}
+.feat-row h3 span{color:var(--gold)}
+.feat-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.feat-list div{background:var(--ink3);padding:20px 22px}
+.feat-list b{display:block;font-size:1rem;color:var(--cream)}
+.feat-list b span{color:var(--gold)}
+.feat-list p{color:var(--muted);font-size:.88rem;margin-top:4px}
+@media(max-width:860px){.feat-list{grid-template-columns:1fr}}
+
+/* stats bar */
+.stats-bar{background:var(--gold);color:var(--ink);padding:56px 0}
+.stats-row{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.stats-row .stat b{color:var(--ink);font-size:2.2rem}
+.stats-row .stat span{color:rgba(22,19,15,.7)}
+
+/* roots */
+.roots-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.roots-photos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.roots-photos img{width:100%;height:100%;object-fit:cover}
+.roots-photos .tall{grid-row:span 2}
+.roots-photos .ph{position:relative;overflow:hidden}
+.roots-photos .ph .cap{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(to top,rgba(14,12,9,.92),transparent);font-size:.78rem;font-weight:600;color:var(--cream)}
+.roots h2{font-size:clamp(2.4rem,5.5vw,3.8rem);text-transform:uppercase;margin:14px 0 18px}
 .roots h2 em{font-style:normal;color:var(--gold)}
-.roots p{color:#d8cfba;margin-bottom:16px}
+.roots p{color:var(--muted);margin-bottom:14px}
 .roots p strong{color:var(--cream);font-weight:600}
-.roots-quote{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(1.9rem,4.6vw,2.7rem);line-height:1.15;color:var(--gold);transform:rotate(-1.2deg);margin:34px 0 30px;max-width:600px}
-.roots-quote small{display:block;font-family:'Outfit',sans-serif;font-weight:400;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:10px}
-.roots-photo{margin:36px 0 30px;max-width:340px;transform:rotate(2deg);position:relative}
-.roots-photo .cap{font-family:'Caveat',cursive;font-weight:600;font-size:1.35rem;color:var(--ink);text-align:center;margin-top:10px;line-height:1.1}
-.roots-milestones{margin-top:36px;list-style:none}
-.roots-milestones li{display:flex;gap:20px;align-items:baseline;padding:14px 0;border-bottom:1px solid rgba(212,175,55,.22)}
-.roots-milestones li:nth-child(2){margin-left:44px}
-.roots-milestones li:nth-child(3){margin-left:12px}
-.roots-milestones li:nth-child(4){margin-left:64px}
-.roots-milestones b{font-family:'Archivo Black',sans-serif;color:var(--gold);font-size:1.1rem;white-space:nowrap}
-.roots-milestones span{color:#d8cfba;font-size:.95rem}
-@media(max-width:820px){
-  .roots-inner{margin-left:0}
-  .roots-milestones li:nth-child(2),.roots-milestones li:nth-child(3),.roots-milestones li:nth-child(4){margin-left:0}
-}
+.timeline{list-style:none;margin-top:28px;border-top:1px solid var(--line)}
+.timeline li{display:flex;gap:22px;padding:15px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.timeline b{font-family:'Archivo Black',sans-serif;color:var(--gold);font-size:1rem;min-width:56px}
+.timeline span{color:#d8cfba;font-size:.95rem}
+@media(max-width:860px){.roots-grid{grid-template-columns:1fr}}
 
-/* acting */
-.acting{overflow:hidden;padding-top:110px}
-.monique{font-family:'Archivo Black',sans-serif;font-size:clamp(4.2rem,17vw,11.5rem);line-height:.85;text-transform:uppercase;color:transparent;-webkit-text-stroke:2px var(--gold);margin:6px 0 8px;white-space:nowrap;transform:rotate(-1.4deg)}
-.monique-note{font-family:'Caveat',cursive;font-weight:600;font-size:1.6rem;color:var(--pink);transform:rotate(-2deg);display:inline-block;margin:0 0 36px 12%}
-.acting-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px}
-.acting p{color:var(--muted);margin-bottom:16px;max-width:600px}
-.acting p strong{color:var(--cream);font-weight:600}
-.acting-card{border:2px solid var(--gold);padding:30px;background:var(--ink3);align-self:start;transform:rotate(1.2deg);margin-top:40px;position:relative;box-shadow:0 22px 44px rgba(0,0,0,.45)}
-.acting-card .tape.t1{top:-14px;left:34px;transform:rotate(-5deg)}
-.acting-card h3{font-size:1.35rem;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.acting-card p{font-size:.95rem}
-.acting-card .role{font-family:'Archivo Black',sans-serif;font-size:1rem;margin-top:14px}
-.acting-card .role span{color:var(--muted);font-family:'Outfit',sans-serif;font-weight:300;font-size:.85rem}
-@media(max-width:820px){.acting-grid{grid-template-columns:1fr}.acting-card{margin-top:8px}.monique-note{margin-left:0}}
+/* business */
+.biz{background:var(--ink2)}
+.biz-card{display:grid;grid-template-columns:340px 1fr;gap:0;background:var(--ink3);border:1px solid var(--line);margin-bottom:24px;overflow:hidden}
+.biz-card img{width:100%;height:100%;object-fit:cover;min-height:240px}
+.biz-body{padding:32px 36px}
+.biz-body .tag{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.biz-body h3{font-size:1.5rem;text-transform:uppercase;margin:8px 0 12px}
+.biz-body p{color:var(--muted);font-size:.95rem}
+.biz-body p strong{color:var(--cream);font-weight:600}
+.biz-body .biz-fact{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:.85rem;color:var(--gold-soft)}
+@media(max-width:860px){.biz-card{grid-template-columns:1fr}.biz-card img{min-height:0;height:220px}}
 
-/* shows, cream page */
-.shows{background:var(--cream);color:var(--ink);padding-top:70px}
-.shows .eyebrow{color:var(--gold-deep)}
-.ticket{border:2px dashed rgba(22,19,15,.45);background:var(--ink);color:var(--cream);padding:38px;margin:36px 0 64px;display:grid;grid-template-columns:auto 1fr auto;gap:34px;align-items:center;transform:rotate(-.7deg);box-shadow:0 24px 48px rgba(0,0,0,.3);position:relative}
-.ticket .tape.t1{top:-14px;right:60px;transform:rotate(6deg)}
-.next-date{text-align:center;border-right:2px dashed rgba(212,175,55,.4);padding-right:34px}
-.next-date .mo{font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
-.next-date .dy{font-family:'Archivo Black',sans-serif;font-size:4.2rem;line-height:1;color:var(--cream)}
-.next-date .yr{font-size:.8rem;letter-spacing:.3em;color:var(--muted)}
-.ticket h3{font-size:1.7rem;text-transform:uppercase;margin-bottom:6px}
+/* film and tv carousel */
+.film-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.carousel-btns{display:flex;gap:10px}
+.carousel-btns button{background:transparent;border:2px solid var(--gold);color:var(--gold);font-family:'Outfit',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;padding:12px 22px;cursor:pointer;transition:.25s}
+.carousel-btns button:hover{background:var(--gold);color:var(--ink)}
+.film-carousel{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:16px;margin-top:36px}
+.film-carousel::-webkit-scrollbar{display:none}
+.f-card{flex:0 0 300px;scroll-snap-align:start;background:var(--ink3);border:1px solid var(--line);display:flex;flex-direction:column}
+.f-card img{width:100%;height:170px;object-fit:cover}
+.f-card .f-type{height:170px;background:linear-gradient(135deg,#241f18,#0e0c09);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.f-card .f-type span{font-family:'Archivo Black',sans-serif;font-size:1.35rem;text-transform:uppercase;color:var(--gold);line-height:1.15}
+.f-body{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+.f-body .tag{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.f-body h3{font-size:1.2rem;text-transform:uppercase;margin:8px 0 8px}
+.f-body p{color:var(--muted);font-size:.9rem;flex:1}
+.f-body p strong{color:var(--cream);font-weight:600}
+.f-body .f-meta{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* shows, cream */
+.shows{background:var(--cream);color:var(--ink)}
+.ticket{background:var(--ink);color:var(--cream);padding:38px;margin:36px 0 56px;display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;box-shadow:0 24px 48px rgba(0,0,0,.3)}
+.next-date{text-align:center;border-right:2px solid rgba(212,175,55,.4);padding-right:32px}
+.next-date .mo{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.next-date .dy{font-family:'Archivo Black',sans-serif;font-size:4rem;line-height:1;color:var(--cream)}
+.next-date .yr{font-size:.78rem;letter-spacing:.28em;color:var(--muted)}
+.ticket h3{font-size:1.6rem;text-transform:uppercase;margin-bottom:6px}
 .ticket h3 em{font-style:normal;color:var(--gold)}
 .ticket p{color:var(--muted);font-size:.95rem}
 .ticket .price{color:var(--gold);font-weight:600}
-@media(max-width:820px){
-  .ticket{grid-template-columns:1fr;gap:20px;padding:28px}
-  .next-date{border-right:none;border-bottom:2px dashed rgba(212,175,55,.4);padding-right:0;padding-bottom:18px;text-align:left}
-}
+@media(max-width:860px){.ticket{grid-template-columns:1fr;gap:20px;padding:28px}.next-date{border-right:none;border-bottom:2px solid rgba(212,175,55,.4);padding-right:0;padding-bottom:18px;text-align:left}}
 .tour-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:8px}
-.tour-head h3{font-size:1.7rem;text-transform:uppercase}
-.tour-head .eyebrow{color:var(--gold-deep)}
-.tour-note{color:#6d6350;font-size:.95rem;margin-bottom:28px;max-width:640px}
-.taped-note{font-family:'Caveat',cursive;font-weight:700;font-size:1.7rem;color:var(--ink);background:var(--gold-soft);display:inline-block;padding:10px 22px 12px;transform:rotate(-2.5deg);box-shadow:0 10px 22px rgba(0,0,0,.2);margin-bottom:34px;position:relative}
-.taped-note .tape.t1{top:-12px;left:38%;width:80px;height:24px;transform:rotate(-3deg)}
-.tour-list{display:grid;grid-template-columns:1.1fr .9fr;gap:0 64px}
-.tour-col.right{margin-top:52px}
+.tour-head h3{font-size:1.6rem;text-transform:uppercase}
+.tour-note{color:var(--muted-dark);font-size:.95rem;margin-bottom:28px;max-width:680px}
+.tour-list{display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
 .tour-row{display:flex;align-items:baseline;gap:16px;padding:13px 0;border-bottom:1px solid rgba(22,19,15,.16)}
-.tour-row .d{font-family:'Archivo Black',sans-serif;color:var(--gold-deep);min-width:104px;font-size:.88rem;white-space:nowrap}
+.tour-row .d{font-family:'Archivo Black',sans-serif;color:var(--gold-deep);min-width:104px;font-size:.86rem;white-space:nowrap}
 .tour-row .c{font-weight:500}
-.tour-row .v{margin-left:auto;color:#6d6350;font-size:.85rem;text-align:right}
-.shows-foot{color:#6d6350;font-size:.92rem;margin-top:30px;max-width:640px}
-@media(max-width:820px){.tour-list{grid-template-columns:1fr}.tour-col.right{margin-top:0}}
+.tour-row .v{margin-left:auto;color:var(--muted-dark);font-size:.85rem;text-align:right}
+.tour-row .sold{color:var(--gold-deep);font-weight:700}
+.shows-foot{color:var(--muted-dark);font-size:.92rem;margin-top:28px;max-width:680px}
+@media(max-width:860px){.tour-list{grid-template-columns:1fr}}
 
-/* formats */
-.formats-grid{display:grid;grid-template-columns:1fr 1.12fr;gap:40px;align-items:start}
-.format-card{border:2px solid var(--gold);padding:32px;background:var(--ink3);box-shadow:0 22px 44px rgba(0,0,0,.4)}
-.format-card.left{transform:rotate(-1deg)}
-.format-card.right{transform:rotate(1deg);margin-top:56px}
-.format-card img{width:150px;border:2px solid var(--line);margin-bottom:18px}
-.format-card h3{font-size:1.35rem;text-transform:uppercase;margin-bottom:8px}
-.format-card p{color:var(--muted);font-size:.92rem;margin-bottom:18px}
-.stream-list{list-style:none}
-.stream-list li{border-bottom:1px solid rgba(212,175,55,.14)}
+/* shop */
+.shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.shop-card{background:var(--ink3);border:1px solid var(--line);display:flex;flex-direction:column}
+.shop-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.shop-body{padding:22px 22px 26px;display:flex;flex-direction:column;flex:1}
+.shop-body .tag{font-size:.68rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.shop-body h3{font-size:1.25rem;text-transform:uppercase;margin:8px 0 8px}
+.shop-body p{color:var(--muted);font-size:.9rem;flex:1}
+.shop-body .price{font-family:'Archivo Black',sans-serif;font-size:1.5rem;color:var(--gold);margin:16px 0}
+.shop-body .btn{text-align:center}
+@media(max-width:900px){.shop-grid{grid-template-columns:1fr}}
+.stream-row{margin-top:44px}
+.stream-row h3{font-size:1.3rem;text-transform:uppercase;margin-bottom:18px}
+.stream-row h3 span{color:var(--gold)}
+.stream-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.stream-list li{border-bottom:1px solid rgba(212,175,55,.16)}
 .stream-list a{display:flex;justify-content:space-between;align-items:center;padding:14px 2px;color:var(--cream);font-weight:500;transition:.2s}
 .stream-list a:hover{color:var(--gold);padding-left:8px}
-.stream-list a span:last-child{color:var(--gold);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase}
-@media(max-width:820px){.formats-grid{grid-template-columns:1fr}.format-card.right{margin-top:0}}
+.stream-list a span:last-child{color:var(--gold);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase}
+@media(max-width:860px){.stream-list{grid-template-columns:1fr}}
 
-/* social, gold page */
-.social{background:var(--gold);color:var(--ink);padding:88px 0}
+/* social */
+.social{background:var(--gold);color:var(--ink);padding:80px 0}
 .social .eyebrow{color:var(--ink)}
-.social h2{font-size:clamp(2.4rem,6.5vw,4.2rem);text-transform:uppercase;margin-top:14px}
-.social .scribble{font-family:'Caveat',cursive;font-weight:700;font-size:1.7rem;transform:rotate(-2deg);display:inline-block;margin-top:8px}
-.social-links{display:flex;flex-wrap:wrap;gap:18px 40px;margin-top:40px}
-.social-links a{font-family:'Archivo Black',sans-serif;font-size:clamp(1.4rem,4.4vw,2.2rem);text-transform:uppercase;color:var(--ink);transition:.2s;border-bottom:3px solid transparent;padding-bottom:4px}
-.social-links a:nth-child(2){transform:rotate(1.5deg)}
-.social-links a:nth-child(4){transform:rotate(-1.5deg)}
-.social-links a:hover{border-bottom-color:var(--ink)}
-.social-links a small{display:block;font-family:'Outfit',sans-serif;font-weight:500;font-size:.72rem;letter-spacing:.24em;color:rgba(22,19,15,.65)}
+.social h2{font-size:clamp(2.4rem,6vw,4rem);text-transform:uppercase;margin-top:14px}
+.social-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:36px}
+.social-links a{display:inline-block;background:var(--ink);color:var(--cream);font-family:'Archivo Black',sans-serif;font-size:1.05rem;text-transform:uppercase;padding:18px 26px;transition:.25s}
+.social-links a:hover{background:var(--cream);color:var(--ink)}
+.social-links a small{display:block;font-family:'Outfit',sans-serif;font-weight:500;font-size:.68rem;letter-spacing:.22em;color:var(--gold);margin-top:4px}
+.social-links a:hover small{color:var(--gold-deep)}
 
 /* cta + footer */
-.cta{padding:110px 0}
-.cta h2{font-size:clamp(2.5rem,7vw,4.6rem);text-transform:uppercase;margin:16px 0 12px}
+.cta{padding:100px 0;text-align:center}
+.cta h2{font-size:clamp(2.4rem,6.5vw,4.2rem);text-transform:uppercase;margin:16px 0 14px}
 .cta h2 em{font-style:normal;color:var(--gold)}
-.cta .scribble{font-family:'Caveat',cursive;font-weight:600;font-size:1.7rem;color:var(--gold-soft);transform:rotate(-1.5deg);display:inline-block;margin-bottom:18px}
-.cta p{color:var(--muted);max-width:520px;margin:0 auto 30px}
-.cta .wrap{text-align:center}
+.cta p{color:var(--muted);max-width:560px;margin:0 auto 30px}
 footer{border-top:1px solid var(--line);padding:36px 0;text-align:center}
 footer p{color:var(--muted);font-size:.82rem}
-footer .f-logo{font-family:'Archivo Black',sans-serif;font-size:1.15rem;letter-spacing:.02em;color:var(--cream);margin-bottom:8px}
+footer .f-logo{font-family:'Archivo Black',sans-serif;font-size:1.15rem;color:var(--cream);margin-bottom:8px}
 footer .f-logo span{color:var(--gold)}
 
 /* falling gold sparkles */
@@ -309,19 +329,20 @@ footer .f-logo span{color:var(--gold)}
 </head>
 <body>
 
-<div class="grain" aria-hidden="true"></div>
 <div class="disclaimer">Demo redesign concept by Lexis Sapphire Studio &nbsp;•&nbsp; Not affiliated with Kash Doll</div>
 
 <nav>
   <div class="nav-in">
-    <a href="#top" class="logo">KASH<span>DOLL</span><small>Detroit's own</small></a>
+    <a href="#top" class="logo">KASH<span>DOLL</span></a>
     <ul class="nav-links">
-      <li><a href="#album">Album</a></li>
+      <li><a href="#prize">New Single</a></li>
       <li><a href="#videos">Videos</a></li>
+      <li><a href="#album">The Last Doll</a></li>
+      <li><a href="#music">Music</a></li>
       <li><a href="#roots">Detroit</a></li>
       <li><a href="#acting">Acting</a></li>
       <li><a href="#shows">Shows</a></li>
-      <li><a href="#music">Music</a></li>
+      <li><a href="#shop">Shop</a></li>
     </ul>
   </div>
 </nav>
@@ -330,32 +351,21 @@ footer .f-logo span{color:var(--gold)}
 
 <!-- HERO -->
 <header class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="eyebrow hero-kicker">New single &nbsp;•&nbsp; Out now &nbsp;•&nbsp; Nov 6, 2026</p>
-      <h1>I'm The<br><span class="line2"><span class="circled">Prize<svg viewBox="0 0 300 90" aria-hidden="true"><path d="M22,48 C38,16 118,6 162,8 C222,10 284,20 282,46 C280,70 202,84 148,82 C88,80 14,72 22,48"/></svg></span></span></h1>
-      <span class="feat">feat. Ebony Riley</span>
-      <p class="hero-sub">Kash Doll flips the script on love, money and self worth. <strong>Method Man</strong> stars as the man convinced he is the prize, in a cinematic video directed by <strong>WhoIsHalo</strong>. Produced by <strong>OctaneThisThatGas</strong>.</p>
-      <div class="hero-cta">
-        <svg class="hero-arrow" viewBox="0 0 120 60" aria-hidden="true"><path d="M10,8 C44,38 74,46 106,42 M106,42 L92,32 M106,42 L100,56"/></svg>
-        <a class="btn" href="https://kashdoll.ffm.to/imtheprize" target="_blank" rel="noopener">Stream it now</a>
-        <a class="btn-ghost" href="#videos">Watch the video</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><b>2.9M</b><span>Views in 2 weeks</span></div>
-        <div class="stat"><b>No. 6</b><span>YouTube Trending</span></div>
-        <div class="stat"><b>869K</b><span>YouTube subscribers</span></div>
-      </div>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <span class="hero-badge">New single &nbsp;•&nbsp; Out now &nbsp;•&nbsp; Nov 6, 2026</span>
+    <h1>I'm The<br><span class="gold">Prize</span></h1>
+    <p class="feat">Kash Doll <span>feat. Ebony Riley</span> &nbsp;•&nbsp; Method Man stars in the video</p>
+    <p class="hero-sub">Kash Doll flips the script on love, money and self worth. <strong>Method Man</strong> plays the husband convinced he is the prize, in a cinematic video directed by <strong>WhoIsHalo</strong> and produced by <strong>OctaneThisThatGas</strong>. The video passed <strong>2.9 million views in its first two weeks</strong>.</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://kashdoll.ffm.to/imtheprize" target="_blank" rel="noopener">Stream it now</a>
+      <a class="btn-ghost" href="#videos">Watch the video</a>
     </div>
-    <div class="hero-art">
-      <div class="sticker">Detroit's<br>Own</div>
-      <div class="polaroid main-polaroid">
-        <span class="tape t1"></span>
-        <span class="tape t2 pink"></span>
-        <img src="https://i.ytimg.com/vi/_m47swxun0c/maxresdefault.jpg" alt="Kash Doll in the I'm The Prize official music video">
-        <p class="cap">the video everybody's talking about</p>
-      </div>
-      <img class="single-art" src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7b/ac/4b/7bac4b5f-4c91-bb94-5403-ce1be63191b0/34162.jpg/600x600bb.jpg" alt="I'm The Prize single artwork">
+    <div class="hero-stats">
+      <div class="stat"><b>2.9M</b><span>Views in 2 weeks</span></div>
+      <div class="stat"><b>No. 6</b><span>YouTube Trending</span></div>
+      <div class="stat"><b>105M</b><span>For Everybody views</span></div>
+      <div class="stat"><b>420M+</b><span>Spotify streams</span></div>
     </div>
   </div>
 </header>
@@ -363,36 +373,144 @@ footer .f-logo span{color:var(--gold)}
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span class="solid">Detroit's Own</span><span class="star">✦</span><span class="hand">ten years in the game</span><span class="star">✦</span><span class="outline">The Last Doll</span><span class="star">✦</span><span class="solid">BMF</span><span class="star">✦</span><span class="hand">multi-platinum</span><span class="star">✦</span><span class="outline">BET Award Nominee</span><span class="star">✦</span>
-    <span class="solid">Detroit's Own</span><span class="star">✦</span><span class="hand">ten years in the game</span><span class="star">✦</span><span class="outline">The Last Doll</span><span class="star">✦</span><span class="solid">BMF</span><span class="star">✦</span><span class="hand">multi-platinum</span><span class="star">✦</span><span class="outline">BET Award Nominee</span><span class="star">✦</span>
+    <span>Detroit's Own</span><span class="star">✦</span><span>3 RIAA Gold Singles</span><span class="star">✦</span><span>BMF on Starz</span><span class="star">✦</span><span>The Last Doll</span><span class="star">✦</span><span>420M Spotify Streams</span><span class="star">✦</span><span>BET Award Nominee</span><span class="star">✦</span><span>12M+ Followers</span><span class="star">✦</span>
+    <span>Detroit's Own</span><span class="star">✦</span><span>3 RIAA Gold Singles</span><span class="star">✦</span><span>BMF on Starz</span><span class="star">✦</span><span>The Last Doll</span><span class="star">✦</span><span>420M Spotify Streams</span><span class="star">✦</span><span>BET Award Nominee</span><span class="star">✦</span><span>12M+ Followers</span><span class="star">✦</span>
   </div>
 </div>
 
-<!-- TORN EDGE INTO CREAM -->
-<div class="torn torn-cream" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,40 L0,22 L38,27 L77,14 L120,28 L165,18 L210,31 L255,12 L300,24 L345,16 L390,29 L435,20 L480,27 L525,13 L570,25 L615,17 L660,30 L705,15 L750,26 L795,19 L840,28 L885,14 L930,25 L975,18 L1020,29 L1065,16 L1110,26 L1155,19 L1200,24 L1200,40 Z"/></svg></div>
+<!-- I'M THE PRIZE FEATURE -->
+<section class="feature" id="prize">
+  <div class="wrap">
+    <div class="feature-grid">
+      <div>
+        <div class="frame">
+          <iframe src="https://www.youtube.com/embed/_m47swxun0c" title="Kash Doll - I'm The Prize (feat. Ebony Riley) [Official Music Video]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p style="margin-top:16px;color:var(--muted);font-size:.9rem">Watch the official video, then the behind the scenes cut and her sit down interview with Method Man about the role, all on her YouTube channel.</p>
+        <a class="btn" href="https://kashdoll.ffm.to/imtheprize" target="_blank" rel="noopener" style="margin-top:8px">Stream I'm The Prize</a>
+      </div>
+      <div>
+        <p class="eyebrow">The new single &nbsp;•&nbsp; Nov 6, 2026</p>
+        <h2>Method Man Was Her <em>First Choice</em></h2>
+        <p>Kash Doll knew exactly who she wanted before the song was finished. <strong>Method Man</strong>, the Wu-Tang legend she first saw in Mary J. Blige's "Love @ 1st Sight" video, stars as the husband in a marriage that looks perfect from the outside and is falling apart behind closed doors.</p>
+        <p>He learned his lyrics in <strong>one day</strong> and arrived on set ready to perform. The video runs <strong>3:24</strong>, longer than the 2:49 single, and tells a full story about power, money and emotional manipulation in a relationship.</p>
+        <div class="quote">
+          <p>"If you in a relationship that both of you guys are watering each other, I feel like both of you guys are the prize. Nobody's the prize when one person is drained and the other person is walking around the field."</p>
+          <small>Kash Doll, PEOPLE, Nov 10, 2026</small>
+        </div>
+        <div class="fact-grid">
+          <div><b>Nov 6, 2026</b><span>Single and video out</span></div>
+          <div><b>Ebony Riley</b><span>Featured vocalist</span></div>
+          <div><b>WhoIsHalo</b><span>Video director</span></div>
+          <div><b>OctaneThisThatGas</b><span>Producer</span></div>
+        </div>
+        <div class="quote">
+          <p>"I wanted it to be very expensive, like a wife and a husband that have great careers, because people think that they have it all figured out, but this is what be going on in them houses."</p>
+          <small>Kash Doll, PEOPLE, on the video's story</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- ALBUM -->
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Watch</p>
+      <h2>The <em>Visuals</em></h2>
+      <p class="sub">Three eras, three videos, more than 130 million views between them. "For Everybody" alone has passed 105 million.</p>
+    </div>
+    <div class="videos-grid">
+      <div class="video-card">
+        <div class="frame">
+          <iframe src="https://www.youtube.com/embed/_m47swxun0c" title="Kash Doll - I'm The Prize (feat. Ebony Riley) [Official Music Video]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>I'm The Prize <span>(feat. Ebony Riley)</span></h3>
+        <p>Method Man stars as the love interest in a story about a picture-perfect relationship falling apart behind closed doors. Directed by WhoIsHalo.</p>
+        <p class="meta">2026 &nbsp;•&nbsp; 2.9M views in 2 weeks &nbsp;•&nbsp; No. 6 YouTube Trending</p>
+        <a class="watch" href="https://www.youtube.com/watch?v=_m47swxun0c" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+      <div class="video-card">
+        <div class="frame">
+          <iframe src="https://www.youtube.com/embed/2WEezxm4qSE" title="Kash Doll - Kash Kommandments (Official Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>Kash Kommandments</h3>
+        <p>Professor Kash lays down the rules for women on money, self respect and loyalty. Directed by Diego. Premiered on a BET billboard in Times Square.</p>
+        <p class="meta">2024 &nbsp;•&nbsp; 23M views &nbsp;•&nbsp; Top 40 US Urban Radio</p>
+        <a class="watch" href="https://www.youtube.com/watch?v=2WEezxm4qSE" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+      <div class="video-card">
+        <div class="frame">
+          <iframe src="https://www.youtube.com/embed/tQ8xAeVp9qQ" title="Kash Doll - For Everybody [Produced By: Blasian Beats]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <h3>For Everybody</h3>
+        <p>The breakout. Produced by Blasian Beats, directed by Genius Minds Production. Certified Gold by the RIAA on September 4, 2024.</p>
+        <p class="meta">2017 &nbsp;•&nbsp; 105M views &nbsp;•&nbsp; RIAA Gold</p>
+        <a class="watch" href="https://www.youtube.com/watch?v=tQ8xAeVp9qQ" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">In frame</p>
+      <h2>The <em>Journey</em> So Far</h2>
+      <p class="sub">From the Joy Road freestyles to the Billboard 200, from Dexter Ave to Starz. Every frame is a real moment from the catalog.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item">
+        <img src="kash-doll-2021.png" alt="Kash Doll in 2021" loading="lazy">
+        <div class="cap"><b>Kash Doll, 2021</b><span>The BMF era begins</span></div>
+      </div>
+      <div class="g-item">
+        <a href="https://www.youtube.com/watch?v=r0aGLAfwPvY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/r0aGLAfwPvY/maxresdefault.jpg" alt="Kash Doll in the OH BOY video, shot in Detroit" loading="lazy"></a>
+        <div class="cap"><b>OH BOY, 2023</b><span>Shot in Detroit, 7.7M views</span></div>
+      </div>
+      <div class="g-item">
+        <a href="https://www.youtube.com/watch?v=cCiZYcLjQFs" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/cCiZYcLjQFs/maxresdefault.jpg" alt="Kash Doll and Big Sean in the Ready Set video" loading="lazy"></a>
+        <div class="cap"><b>Ready Set with Big Sean, 2019</b><span>Creative direction by Teyana Taylor</span></div>
+      </div>
+      <div class="g-item">
+        <a href="https://www.youtube.com/watch?v=6Rj2IABk0eI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/6Rj2IABk0eI/maxresdefault.jpg" alt="Kash Doll in the Ice Me Out video" loading="lazy"></a>
+        <div class="cap"><b>Ice Me Out, 2018</b><span>First Republic single, RIAA Gold</span></div>
+      </div>
+      <div class="g-item">
+        <a href="https://www.youtube.com/watch?v=eT_q2oHPpno" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/eT_q2oHPpno/maxresdefault.jpg" alt="Kash Doll in the Jump video, filmed in Detroit" loading="lazy"></a>
+        <div class="cap"><b>Jump, 2024</b><span>Filmed in Detroit, samples Apache</span></div>
+      </div>
+      <div class="g-item">
+        <a href="https://www.youtube.com/watch?v=_DiXsMf58Uc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_DiXsMf58Uc/maxresdefault.jpg" alt="Kash Doll in the Power video" loading="lazy"></a>
+        <div class="cap"><b>Power, 2024</b><span>Over Kanye West's 2010 beat, 8.8M views</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE LAST DOLL -->
 <section class="album on-cream" id="album">
   <div class="wrap">
     <div class="album-grid">
       <div class="album-art">
-        <div class="polaroid">
-          <span class="tape t1"></span>
-          <span class="tape t2 pink"></span>
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/5c/9b/c55c9be0-68f5-3bc2-73f3-a10449aa0794/25351.jpg/600x600bb.jpg" alt="The Last Doll album cover, Kash Doll as a doll in a pink collector package">
-          <p class="cap">the collector's edition cover</p>
-        </div>
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/5c/9b/c55c9be0-68f5-3bc2-73f3-a10449aa0794/25351.jpg/600x600bb.jpg" alt="The Last Doll album cover, Kash Doll as a doll in a pink collector package" loading="lazy">
       </div>
       <div>
-        <p class="eyebrow">Sophomore album</p>
+        <p class="eyebrow">Sophomore album &nbsp;•&nbsp; Nov 15, 2024</p>
         <h2>The Last <em>Doll</em></h2>
-        <p class="hand" style="font-size:1.7rem;color:var(--gold-deep);transform:rotate(-1.5deg);display:inline-block;margin-bottom:12px">the one that closed the doll era</p>
-        <p>Ten years in the game, and Kash Doll closed the doll era on her own terms. <strong>The Last Doll</strong> is her most personal project yet, songs about her kids, self love, mental health and growth, next to the unapologetic bars that built her name. It is her <strong>highest-charting album to date</strong>.</p>
-        <p style="margin-top:14px">The cover says it all. Kash as a collector's doll in a pink package, surrounded by the life she built. The <strong>"Jump"</strong> video, sampling the Sugar Hill Gang's "Apache," premiered on BET Jams and BET Hip Hop.</p>
+        <p>Ten years in the game, and Kash Doll closed the doll era on her own terms. <strong>The Last Doll</strong> is her most personal project: songs about her kids, self love and growth, next to the unapologetic bars that built her name. Released on her own <strong>Kash Doll Enterprises</strong> with <strong>MNRK Records</strong>.</p>
+        <p style="margin-top:14px">The cover says it all. Kash as a collector's doll in a pink blister package, silver bodysuit, surrounded by the life she built: sunglasses, watch, lipstick, phone, jewelry, heels, pink handbag, cash and champagne. The <strong>"Jump"</strong> video, sampling the Sugar Hill Gang's "Apache," premiered on BET Jams and BET Hip Hop.</p>
         <div class="album-facts">
           <div><b>Nov 15, 2024</b><span>Released</span></div>
           <div><b>14 tracks</b><span>39 minutes</span></div>
           <div><b>MNRK</b><span>Kash Doll Enterprises</span></div>
+          <div><b>Jan 10, 2025</b><span>CD release</span></div>
+        </div>
+        <div class="quote">
+          <p>"Klarity" is a love song to her daughter, born earlier in the year. "Baby Boy" flips Cam'ron's "Oh Boy" into a love song. "Comfy" with Tink riffs on Lil Wayne's "Comfortable." "POWER" slows down a Kanye West beat from 2010.</p>
+          <small>Apple Music, on The Last Doll</small>
         </div>
         <a class="btn" href="https://music.apple.com/na/album/the-last-doll/1773383940" target="_blank" rel="noopener">Listen on Apple Music</a>
       </div>
@@ -400,9 +518,9 @@ footer .f-logo span{color:var(--gold)}
 
     <div class="track-index">
       <h3>The Track Index</h3>
-      <p class="ti-sub">Fourteen songs. Features from Tee Grizzley, Yung Bleu, Tracy T, Tink, Shantel May, Ron E and MDG. <span class="hand">start with Kash Kommandments</span></p>
+      <p class="ti-sub">Fourteen songs. Features from Tee Grizzley, Yung Bleu, Tracy T, Tink, Shantel May, Ron E and MDG. Start with "Kash Kommandments," stay for "Klarity."</p>
       <div class="tracks">
-        <div class="tracks-col">
+        <div>
           <div class="track"><span class="n">01</span><span class="t">Klarity</span><span class="len">3:07</span></div>
           <div class="track"><span class="n">02</span><span class="t">Kash Kommandments</span><span class="len">3:29</span></div>
           <div class="track"><span class="n">03</span><span class="t">Nothin New</span><span class="len">2:43</span></div>
@@ -410,9 +528,9 @@ footer .f-logo span{color:var(--gold)}
           <div class="track"><span class="n">05</span><span class="t">Jump</span><span class="len">1:41</span></div>
           <div class="track"><span class="n">06</span><span class="t">Plot Twist</span><span class="len">2:46</span></div>
           <div class="track"><span class="n">07</span><span class="t">NWA</span><span class="f">feat. Yung Bleu and Tracy T</span><span class="len">3:23</span></div>
-          <div class="track"><span class="n">08</span><span class="t">Baby Boy</span><span class="len">2:38</span></div>
         </div>
-        <div class="tracks-col right">
+        <div>
+          <div class="track"><span class="n">08</span><span class="t">Baby Boy</span><span class="len">2:38</span></div>
           <div class="track"><span class="n">09</span><span class="t">Stupid</span><span class="len">2:49</span></div>
           <div class="track"><span class="n">10</span><span class="t">Comfy</span><span class="f">feat. Tink</span><span class="len">3:31</span></div>
           <div class="track"><span class="n">11</span><span class="t">Love Myself</span><span class="f">feat. Shantel May and Ron E</span><span class="len">4:01</span></div>
@@ -425,109 +543,478 @@ footer .f-logo span{color:var(--gold)}
   </div>
 </section>
 
-<!-- QUOTE BAND -->
-<section class="quote-band">
-  <div class="wrap">
-    <p class="big-quote">"If you in a relationship that both of you guys are watering each other, I feel like <span class="hl">both of you guys are the prize.</span>"</p>
-    <p class="attr">Kash Doll <span>talking "I'm The Prize" with PEOPLE</span></p>
-  </div>
-</section>
-
-<!-- VIDEOS -->
-<section id="videos">
+<!-- DISCOGRAPHY -->
+<section id="music">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Watch</p>
-      <h2>The <em>Visuals</em></h2>
-      <span class="scribble">Meth learned the lyrics in one day</span>
+      <p class="eyebrow">The catalog</p>
+      <h2>From K.R.E.A.M.<br><em>To The Last Doll</em></h2>
+      <p class="sub">Eight projects, 87 songs billed under her own name. Two studio albums, four mixtapes, two EPs, and a run of singles that built Detroit's loudest female rap catalog.</p>
     </div>
-    <div class="videos-grid">
-      <div class="video-card main">
-        <div class="frame">
-          <iframe src="https://www.youtube.com/embed/_m47swxun0c" title="Kash Doll - I'm The Prize (feat. Ebony Riley) [Official Music Video]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <div class="disco-grid">
+      <div class="d-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c2/bf/be/c2bfbe8f-9980-0feb-7a8d-27b4599c3edf/19UMGIM88610.rgb.jpg/600x600bb.jpg" alt="Stacked album cover, Kash Doll seated on a pyramid of safes" loading="lazy">
+        <div class="d-body">
+          <span class="tag">Studio album &nbsp;•&nbsp; 2019</span>
+          <h3>Stacked</h3>
+          <p>Her major label debut on Republic Records. Entered the <strong>Billboard 200 at No. 76</strong> and <strong>No. 14 on Top Rap Albums</strong>, selling about 28,600 units in its first week. "Ready Set" with Big Sean and "No Lames" with Summer Walker carried it.</p>
+          <div class="d-meta"><b>Oct 18, 2019</b> &nbsp;•&nbsp; 17 tracks &nbsp;•&nbsp; 46:38 &nbsp;•&nbsp; Republic</div>
         </div>
-        <h3>I'm The Prize <span>(feat. Ebony Riley)</span></h3>
-        <p>Official music video. Method Man stars as the love interest in a story about a picture-perfect relationship falling apart behind closed doors. Directed by WhoIsHalo. Premiered November 6, 2026.</p>
-        <a class="watch" href="https://www.youtube.com/watch?v=_m47swxun0c" target="_blank" rel="noopener">Watch on YouTube</a>
       </div>
-      <div class="video-card second">
-        <div class="frame">
-          <iframe src="https://www.youtube.com/embed/WimeRwT3DXI" title="Kash Doll - NWM (feat. Alex Vaughn) (Official Visualizer)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="d-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7d/db/ef/7ddbef45-6a5b-eb52-ebdf-d2c1b60fd07c/634164351724.png/600x600bb.jpg" alt="Back on Dexter mixtape cover, Kash Doll at Taylor and Dexter in Detroit" loading="lazy">
+        <div class="d-body">
+          <span class="tag">Mixtape &nbsp;•&nbsp; Gangsta Grillz &nbsp;•&nbsp; 2023</span>
+          <h3>Back on Dexter</h3>
+          <p>Hosted by <strong>DJ Drama</strong>, executive produced by Kash Doll and Joseph McFashion. Her first project in four years, and her first after the birth of her son. "Back on Dexter means Keisha on this tape, not Kash Doll." Cover shot at Taylor and Dexter.</p>
+          <div class="d-meta"><b>Feb 10, 2023</b> &nbsp;•&nbsp; 11 tracks &nbsp;•&nbsp; 32:58 &nbsp;•&nbsp; MNRK</div>
         </div>
-        <h3>NWM <span>(feat. Alex Vaughn)</span></h3>
-        <p>Official visualizer. The follow-up to "Kash Kommandments," released August 14, 2026. Financial independence, set to a pink-tinted Detroit flex.</p>
-        <a class="watch" href="https://www.youtube.com/watch?v=WimeRwT3DXI" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+      <div class="d-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/74/d3/64/74d364f7-ce48-9772-06f0-a0a48391bfd4/00602567510772.rgb.jpg/600x600bb.jpg" alt="Brat Mail mixtape cover" loading="lazy">
+        <div class="d-body">
+          <span class="tag">Mixtape &nbsp;•&nbsp; 2018</span>
+          <h3>Brat Mail</h3>
+          <p>Released on her birthday, <strong>March 14, 2018</strong>, and dedicated to her fans, the Bratz. The project that bridged the independent grind and the Republic deal five months later.</p>
+          <div class="d-meta"><b>Mar 14, 2018</b> &nbsp;•&nbsp; 9 tracks &nbsp;•&nbsp; Kash Doll Enterprises</div>
+        </div>
+      </div>
+      <div class="d-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/1d/9f/751d9f78-c2aa-a448-6152-3a9e43795b86/27290.jpg/600x600bb.jpg" alt="Kash Kommandments EP cover" loading="lazy">
+        <div class="d-body">
+          <span class="tag">EP &nbsp;•&nbsp; 2025</span>
+          <h3>Kash Kommandments</h3>
+          <p>The single that became a movement, expanded to five tracks: the original, sped up, slowed down and instrumental versions. Produced by Go Grizzly, Cheeze Beatz and Jambo. Hit the <strong>Top 40 on US Urban Radio</strong>.</p>
+          <div class="d-meta"><b>Mar 21, 2025</b> &nbsp;•&nbsp; 5 tracks &nbsp;•&nbsp; MNRK</div>
+        </div>
+      </div>
+      <div class="d-card">
+        <div class="d-type"><span>K.R.E.A.M.</span></div>
+        <div class="d-body">
+          <span class="tag">Mixtape &nbsp;•&nbsp; 2015</span>
+          <h3>K.R.E.A.M.</h3>
+          <p>Kash Rules Everything Around Me. Her first mixtape, released in early 2015, with production on some tracks from <strong>808 Mafia's Purps</strong>. Sold out of her trunk around Detroit before streaming caught up.</p>
+          <div class="d-meta"><b>Early 2015</b> &nbsp;•&nbsp; Debut mixtape &nbsp;•&nbsp; Independent</div>
+        </div>
+      </div>
+      <div class="d-card">
+        <div class="d-type"><span>Keisha vs. Kash Doll</span></div>
+        <div class="d-body">
+          <span class="tag">Mixtape &nbsp;•&nbsp; 2017</span>
+          <h3>Keisha vs. Kash Doll</h3>
+          <p>The project that told her story on her own terms: Keisha, the girl from Joy Road, against Kash Doll, the star she was becoming. Released the same year as "For Everybody."</p>
+          <div class="d-meta"><b>2017</b> &nbsp;•&nbsp; Independent</div>
+        </div>
+      </div>
+      <div class="d-card">
+        <div class="d-type"><span>The Vault</span></div>
+        <div class="d-body">
+          <span class="tag">EP &nbsp;•&nbsp; 2018</span>
+          <h3>The Vault</h3>
+          <p>Released <strong>July 16, 2018</strong> after she was released from her previous deal. The "For Everybody" video from this EP passed 10 million views and set up the Republic signing the next month.</p>
+          <div class="d-meta"><b>Jul 16, 2018</b> &nbsp;•&nbsp; Streaming EP</div>
+        </div>
+      </div>
+      <div class="d-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/5c/9b/c55c9be0-68f5-3bc2-73f3-a10449aa0794/25351.jpg/600x600bb.jpg" alt="The Last Doll album cover" loading="lazy">
+        <div class="d-body">
+          <span class="tag">Studio album &nbsp;•&nbsp; 2024</span>
+          <h3>The Last Doll</h3>
+          <p>The sophomore album, released on her own Kash Doll Enterprises with MNRK. Fourteen tracks marking ten years in the game, from "Kash Kommandments" to "Klarity," the love song to her daughter.</p>
+          <div class="d-meta"><b>Nov 15, 2024</b> &nbsp;•&nbsp; 14 tracks &nbsp;•&nbsp; 39 min &nbsp;•&nbsp; MNRK</div>
+        </div>
+      </div>
+      <div class="d-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d0/62/43/d06243e3-7747-afc6-e972-db4dd7016836/634164016234.png/600x600bb.jpg" alt="OH BOY EP cover" loading="lazy">
+        <div class="d-body">
+          <span class="tag">EP &nbsp;•&nbsp; 2023</span>
+          <h3>OH BOY</h3>
+          <p>The "OH BOY" single expanded to a five track EP. The posse cut with <strong>Skilla Baby, Baby Money, Cash Kidd and RiskTaker D-Boy</strong>, produced by Reuel StopPlaying and McFashion. Video directed by Diego Cruz, shot in Detroit.</p>
+          <div class="d-meta"><b>May 26, 2023</b> &nbsp;•&nbsp; 5 tracks &nbsp;•&nbsp; MNRK</div>
+        </div>
       </div>
     </div>
-    <p class="video-note">"When I was making it, I seen Method Man the whole time. It was like, I have to have him. I have to have him."<small>Kash Doll, talking "I'm The Prize" with PEOPLE</small></p>
+
+    <div class="mini-lists">
+      <div>
+        <h3>Stacked <span>&nbsp;•&nbsp; Full Tracklist</span></h3>
+        <p class="ml-sub">17 tracks. Features from Big Sean, Lil Wayne, Summer Walker, Teyana Taylor, Trey Songz and LouGotCash.</p>
+        <div class="track"><span class="n">01</span><span class="t">KD Diary</span><span class="len">2:42</span></div>
+        <div class="track"><span class="n">02</span><span class="t">Ready Set</span><span class="f">feat. Big Sean</span><span class="len">2:45</span></div>
+        <div class="track"><span class="n">03</span><span class="t">So Amazing</span><span class="len">2:05</span></div>
+        <div class="track"><span class="n">04</span><span class="t">Paid Bitches</span><span class="len">3:23</span></div>
+        <div class="track"><span class="n">05</span><span class="t">Ice Me Out</span><span class="len">3:02</span></div>
+        <div class="track"><span class="n">06</span><span class="t">Kitten</span><span class="f">feat. Lil Wayne</span></div>
+        <div class="track"><span class="n">07</span><span class="t">On Sight</span><span class="f">feat. Trey Songz</span></div>
+        <div class="track"><span class="n">08</span><span class="t">Krazy</span><span class="f">with LouGotCash</span></div>
+        <div class="track"><span class="n">09</span><span class="t">Mobb'n</span></div>
+        <div class="track"><span class="n">10</span><span class="t">Cheap Shit</span></div>
+        <div class="track"><span class="n">11</span><span class="t">Doin Too Much</span></div>
+        <div class="track"><span class="n">12</span><span class="t">Buss It</span></div>
+        <div class="track"><span class="n">13</span><span class="t">No Lames</span><span class="f">feat. Summer Walker</span></div>
+        <div class="track"><span class="n">14</span><span class="t">Excuses</span></div>
+        <div class="track"><span class="n">15</span><span class="t">Feel Something</span><span class="f">feat. Teyana Taylor</span></div>
+        <div class="track"><span class="n">16</span><span class="t">Coastal Rota</span></div>
+        <div class="track"><span class="n">17</span><span class="t">100 of Us</span><span class="len">3:03</span></div>
+      </div>
+      <div>
+        <h3>Back on Dexter <span>&nbsp;•&nbsp; Full Tracklist</span></h3>
+        <p class="ml-sub">11 tracks. Every feature is Detroit, plus Lakeyah from Milwaukee. The intro uses her VladTV interview.</p>
+        <div class="track"><span class="n">01</span><span class="t">Intro</span><span class="len">3:11</span></div>
+        <div class="track"><span class="n">02</span><span class="t">Add It Up</span><span class="f">feat. Lakeyah</span><span class="len">2:57</span></div>
+        <div class="track"><span class="n">03</span><span class="t">Legit</span><span class="f">feat. Payroll Giovanni</span><span class="len">2:37</span></div>
+        <div class="track"><span class="n">04</span><span class="t">Heavy</span><span class="f">feat. Peezy</span><span class="len">2:38</span></div>
+        <div class="track"><span class="n">05</span><span class="t">Oh Boy</span><span class="f">feat. Skilla Baby, Baby Money, Cash Kidd, RiskTaker D-Boy</span><span class="len">3:43</span></div>
+        <div class="track"><span class="n">06</span><span class="t">All Hype</span><span class="f">feat. Tay B and Babyface Ray</span><span class="len">3:00</span></div>
+        <div class="track"><span class="n">07</span><span class="t">On The Flo</span><span class="f">feat. Sada Baby</span><span class="len">3:07</span></div>
+        <div class="track"><span class="n">08</span><span class="t">RNQ</span><span class="f">feat. Icewear Vezzo</span><span class="len">2:56</span></div>
+        <div class="track"><span class="n">09</span><span class="t">LOL</span><span class="f">feat. Coach Joey</span><span class="len">2:13</span></div>
+        <div class="track"><span class="n">10</span><span class="t">Strugglin</span><span class="f">feat. RMC Mike, Louie Ray, YN Jay</span><span class="len">3:25</span></div>
+        <div class="track"><span class="n">11</span><span class="t">Make Luv</span><span class="f">feat. Bryan Hamilton and TLG Deuce</span><span class="len">3:11</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- DETROIT ROOTS, FULL-BLEED PHOTO -->
+<!-- SINGLES -->
+<section class="singles">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Singles</p>
+      <h2>The Ones <em>That Ran</em></h2>
+      <p class="sub">Three RIAA Gold singles, a viral breakout, and a run of features that put her on records with Big Sean, Iggy Azalea, Lil Wayne and Metro Boomin.</p>
+    </div>
+    <div class="s-grid">
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/15/f8/45/15f84593-52af-a02b-4fd9-54d177542a82/00602567473527.rgb.jpg/600x600bb.jpg" alt="For Everybody single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>For Everybody</h3>
+          <p>The breakout. Produced by Blasian Beats. Video passed 105 million views.</p>
+          <div class="s-meta">2017 &nbsp;•&nbsp; RIAA Gold, Sep 2024</div>
+        </div>
+      </div>
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7b/ac/4b/7bac4b5f-4c91-bb94-5403-ce1be63191b0/34162.jpg/600x600bb.jpg" alt="I'm The Prize single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>I'm The Prize <span>feat. Ebony Riley</span></h3>
+          <p>The new single. Method Man stars in the video. 2.9M views in two weeks.</p>
+          <div class="s-meta">Nov 6, 2026 &nbsp;•&nbsp; No. 6 YouTube Trending</div>
+        </div>
+      </div>
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/44/6f/75/446f7509-cc05-2abd-d709-05da3ce1a4de/33440.jpg/600x600bb.jpg" alt="NWM single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>NWM <span>feat. Alex Vaughn</span></h3>
+          <p>Financial independence, set to a pink-tinted Detroit flex. Visualizer near 1M views.</p>
+          <div class="s-meta">Aug 14, 2026 &nbsp;•&nbsp; 980K views</div>
+        </div>
+      </div>
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/1d/90/e81d90ef-2091-8634-b1a5-cd6a8ade586a/20UMGIM89382.rgb.jpg/600x600bb.jpg" alt="Bad Azz single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>Bad Azz <span>feat. Latto and Benny the Butcher</span></h3>
+          <p>Three heavyweights on one record, released November 2020 on Republic.</p>
+          <div class="s-meta">Nov 20, 2020 &nbsp;•&nbsp; Republic</div>
+        </div>
+      </div>
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/84/44/05/84440573-154d-9530-8663-51060969f1a2/21UMGIM51236.rgb.jpg/600x600bb.jpg" alt="Single and Happy single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>Single and Happy <span>feat. Wale and Eric Bellinger</span></h3>
+          <p>The R&amp;B crossover single, released August 2021.</p>
+          <div class="s-meta">Aug 27, 2021 &nbsp;•&nbsp; Republic</div>
+        </div>
+      </div>
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d1/9f/84/d19f8403-7a07-e97a-fec7-3639127a9c18/20UM1IM06454.rgb.jpg/600x600bb.jpg" alt="Bossa Nova single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>Bossa Nova <span>feat. Tee Grizzley</span></h3>
+          <p>Two Detroit voices on one smooth record. December 2020.</p>
+          <div class="s-meta">Dec 4, 2020 &nbsp;•&nbsp; Republic</div>
+        </div>
+      </div>
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/26/5d/d2/265dd227-ab8b-c0fc-f537-b837ac087bb2/634164016210.png/600x600bb.jpg" alt="Ridin single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>Ridin'</h3>
+          <p>Kash directed the video herself. Released June 2023 on MNRK.</p>
+          <div class="s-meta">Jun 16, 2023 &nbsp;•&nbsp; Self-directed video</div>
+        </div>
+      </div>
+      <div class="s-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/73/e9/be/73e9be0e-75e2-a0c6-6208-f57053eefe12/26UMGIM62284.rgb.jpg/600x600bb.jpg" alt="Thick One Remix single artwork" loading="lazy">
+        <div class="s-body">
+          <h3>Thick One (Remix) <span>42 Dugg feat. Kash Doll and Skilla Baby</span></h3>
+          <p>The visualizer passed 9.1 million views in five months.</p>
+          <div class="s-meta">May 22, 2026 &nbsp;•&nbsp; 9.1M views</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-row">
+      <h3>As Featured <span>&nbsp;•&nbsp; The Calls That Came In</span></h3>
+      <div class="feat-list">
+        <div><b>"So Good" <span>• Big Sean and Metro Boomin feat. Kash Doll</span></b><p>December 2017. Her big break. RIAA Gold on August 1, 2024. 113 million Spotify streams, her most streamed song.</p></div>
+        <div><b>"Friday Night Cypher" <span>• Big Sean feat. Tee Grizzley, Kash Doll and more</span></b><p>2020. The Detroit all-star lineup: Cash Kidd, Payroll, 42 Dugg, Boldy James, Drego, Sada Baby, Royce 5'9" and Eminem. 16.9 million Spotify streams.</p></div>
+        <div><b>"Fuck It Up" <span>• Iggy Azalea feat. Kash Doll</span></b><p>2019, from Iggy's In My Defense. Iggy reached out to Kash for the record. Reached No. 40 on the NZ Hot Singles chart.</p></div>
+        <div><b>"How It's Done" <span>• Charlie's Angels soundtrack</span></b><p>2019. With Kim Petras, ALMA and Stefflon Don, for the Charlie's Angels film soundtrack.</p></div>
+        <div><b>"Raw 3" <span>• feat. Kash Doll, Cash Kidd, BabyFxce E, Loni B, BabyFace Ray and Baby Money</span></b><p>September 2025. The Detroit posse cut. Official video passed 458K views.</p></div>
+        <div><b>"Supahood" <span>• K. Michelle feat. Kash Doll and City Girls</span></b><p>September 2019. Three generations of Southern and Midwest rap on one record.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="wrap stats-row">
+    <div class="stat"><b>420M+</b><span>Spotify streams</span></div>
+    <div class="stat"><b>3x Gold</b><span>RIAA singles</span></div>
+    <div class="stat"><b>87</b><span>Songs in the catalog</span></div>
+    <div class="stat"><b>7.4M</b><span>Instagram followers</span></div>
+    <div class="stat"><b>12M+</b><span>Followers across social</span></div>
+  </div>
+</div>
+
+<!-- DETROIT ROOTS -->
 <section class="roots" id="roots">
   <div class="wrap">
-    <div class="roots-inner">
-      <p class="eyebrow">From Joy Road to the world</p>
-      <h2>Detroit <em>Raised</em> Her</h2>
-      <p class="hand" style="font-size:1.7rem;color:var(--gold-soft);transform:rotate(-1.5deg);display:inline-block;margin-bottom:14px">born Arkeisha Antoinette Knight, March 14, 1992</p>
-      <p>Born <strong>Arkeisha Antoinette Knight</strong>, Kash Doll grew up on Joy Road in Detroit. She worked as an exotic dancer to support her family, then quit to bet on herself. Her first Detroit gigs came in 2014. She sold mixtapes out of her trunk and built her following one freestyle at a time.</p>
-      <p>Her first mixtape, <strong>K.R.E.A.M. (Kash Rules Everything Around Me)</strong>, dropped in early 2015, followed by <strong>Keisha vs. Kash Doll</strong> in 2016. Then came <strong>"For Everybody"</strong>, and a major label deal. <strong>"Ice Me Out"</strong> went Gold and became a Detroit anthem.</p>
-      <p class="roots-quote">"Detroit is tough, and I'm about that life."<small>Kash Doll, NYLON</small></p>
-      <div class="roots-photo">
-        <div class="polaroid">
-          <span class="tape t1" style="top:-12px;left:20px"></span>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Kash_Doll_in_2021.png" alt="Kash Doll in 2021" onerror="this.onerror=null;this.src='https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7b/ac/4b/7bac4b5f-4c91-bb94-5403-ce1be63191b0/34162.jpg/600x600bb.jpg';">
-          <p class="cap">Kash Doll, 2021</p>
+    <div class="roots-grid">
+      <div>
+        <p class="eyebrow">From Joy Road to the world</p>
+        <h2>Detroit <em>Raised</em> Her</h2>
+        <p>Born <strong>Arkeisha Antoinette Knight</strong> on March 14, 1989, the oldest of six siblings, Kash Doll grew up on <strong>Joy Road</strong> in Detroit and started working young to help her single mother support the family. She studied business management at <strong>Henry Ford College</strong> for a year, then worked as an exotic dancer to keep the family afloat. One night she made <strong>$26,000</strong>. She used the money to invest in a beauty bar and studio time, then quit dancing to bet on herself.</p>
+        <p>Her first Detroit gigs came in <strong>2014</strong>. She sold mixtapes out of her trunk and built her following one freestyle at a time on Instagram. <strong>Drake</strong> used Instagram to invite her to open his Summer Sixteen tour stop in Detroit. She remixed Tinashe's "2 On" in 2015, and her "Run Me My Money" video went viral the same year.</p>
+        <div class="quote">
+          <p>"Detroit is tough, and I'm about that life."</p>
+          <small>Kash Doll, NYLON</small>
+        </div>
+        <p>In 2019 she earned the <strong>Spirit of Detroit Award</strong> for her charitable work through Kash Doll Enterprises, and was named <strong>Best Local Rapper</strong> in the 313 Best in Black Detroit awards. She is a mother of two: her son Kashton, born January 6, 2022, and her daughter, born June 12, 2024.</p>
+        <ul class="timeline">
+          <li><b>2014</b><span>First Detroit gigs, mixtapes out the trunk</span></li>
+          <li><b>2015</b><span>K.R.E.A.M. mixtape, "Run Me My Money" goes viral</span></li>
+          <li><b>2017</b><span>"For Everybody" breaks out, "So Good" with Big Sean and Metro Boomin</span></li>
+          <li><b>2018</b><span>Signs to Republic Records, "Ice Me Out" drops</span></li>
+          <li><b>2019</b><span>Stacked debuts at No. 76 on the Billboard 200, BET Award nomination, tours with Meek Mill</span></li>
+          <li><b>2020</b><span>"Ice Me Out" certified Gold, TV debut on Empire</span></li>
+          <li><b>2021</b><span>Joins BMF as Monique on Starz</span></li>
+          <li><b>2023</b><span>Back on Dexter with DJ Drama, a Gangsta Grillz mixtape</span></li>
+          <li><b>2024</b><span>The Last Doll, her first headlining tour, Kendrick Lamar name-checks her in a Drake diss</span></li>
+          <li><b>2026</b><span>"I'm The Prize" with Method Man, her most personal single yet</span></li>
+        </ul>
+      </div>
+      <div class="roots-photos">
+        <div class="ph tall"><img src="kash-doll-2021.png" alt="Kash Doll in 2021" loading="lazy"><div class="cap">Kash Doll, 2021</div></div>
+        <div class="ph"><a href="https://www.youtube.com/watch?v=r0aGLAfwPvY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/r0aGLAfwPvY/maxresdefault.jpg" alt="OH BOY video, shot on Dexter in Detroit" loading="lazy"></a><div class="cap">OH BOY, shot in Detroit</div></div>
+        <div class="ph"><a href="https://www.youtube.com/watch?v=eT_q2oHPpno" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/eT_q2oHPpno/maxresdefault.jpg" alt="Jump video, filmed in Detroit" loading="lazy"></a><div class="cap">Jump, filmed in Detroit</div></div>
+        <div class="ph"><a href="https://www.youtube.com/watch?v=2WEezxm4qSE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/2WEezxm4qSE/maxresdefault.jpg" alt="Kash Kommandments video" loading="lazy"></a><div class="cap">Kash Kommandments, 23M views</div></div>
+        <div class="ph"><a href="https://www.youtube.com/watch?v=PpcG7DN2VPc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/PpcG7DN2VPc/maxresdefault.jpg" alt="Plot Twist video" loading="lazy"></a><div class="cap">Plot Twist, Dec 2024</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUSINESS AND GIVING -->
+<section class="biz">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Beyond music</p>
+      <h2>Boss Moves, <em>Detroit Roots</em></h2>
+      <p class="sub">She studied business management before she ever signed a record deal. The company, the beauty bar and the giving back all run through Detroit.</p>
+    </div>
+
+    <div class="biz-card">
+      <img src="https://i.ytimg.com/vi/2WEezxm4qSE/maxresdefault.jpg" alt="Kash Doll in the Kash Kommandments video, boardroom scene" loading="lazy">
+      <div class="biz-body">
+        <span class="tag">Her company</span>
+        <h3>Kash Doll Enterprises, Inc.</h3>
+        <p>Her own company, and the label behind <strong>The Last Doll</strong> and <strong>Back on Dexter</strong>, released under exclusive license to MNRK Records. After a first record deal she called "the worst thing I've ever done," she built her own table. The company also runs her charitable work, which earned her the <strong>Spirit of Detroit Award</strong> in 2019.</p>
+        <p class="biz-fact">Founded and run by Kash Doll &nbsp;•&nbsp; Label for The Last Doll (2024) and Back on Dexter (2023)</p>
+      </div>
+    </div>
+
+    <div class="biz-card">
+      <img src="https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/e5/fb/d9/e5fbd96d-f3db-b056-01f2-1d35535bf31e/191018152666.jpg/600x600bb.jpg" alt="Run Me My Money single artwork" loading="lazy">
+      <div class="biz-body">
+        <span class="tag">First investment</span>
+        <h3>The Beauty Bar</h3>
+        <p>Before the record deal, there was the business plan. Kash Doll took the money she earned dancing, including a <strong>$26,000 night</strong>, and invested it in a <strong>beauty bar business</strong> and studio time. The beauty bar funded the music. The music funded everything after it.</p>
+        <p class="biz-fact">Funded from her dancing earnings &nbsp;•&nbsp; Her first business, before Republic Records</p>
+      </div>
+    </div>
+
+    <div class="biz-card">
+      <img src="https://i.ytimg.com/vi/_m47swxun0c/maxresdefault.jpg" alt="Kash Doll in the I'm The Prize video" loading="lazy">
+      <div class="biz-body">
+        <span class="tag">Her foundation</span>
+        <h3>Fairy Boss Muva Foundation</h3>
+        <p>Her nonprofit runs an annual <strong>Turkey and Produce Giveaway</strong> in Detroit, now in its 12th year. It started because her mother could not afford a prom dress for her, and she decided no girl in her city should feel that. The most recent giveaway ran <strong>November 21, 2026, 1 to 4 PM at DTLR Belmont Plaza, 2000 E 8 Mile Rd</strong>, in partnership with DTLR and 97.9 WJLB.</p>
+        <p class="biz-fact">Annual giveaway since about 2014 &nbsp;•&nbsp; Nov 21, 2026 at DTLR Belmont Plaza, Detroit</p>
+      </div>
+    </div>
+
+    <div class="biz-card">
+      <img src="https://i.ytimg.com/vi/WimeRwT3DXI/maxresdefault.jpg" alt="Kash Doll in the NWM visualizer" loading="lazy">
+      <div class="biz-body">
+        <span class="tag">Community</span>
+        <h3>B.A.D. Girls Initiative</h3>
+        <p>Black American Doll Girls. The initiative <strong>donates dresses and styles young women</strong> in the Detroit area during prom season, and sponsors community events across the city. It is the same mission as the foundation, aimed at the girls who are where she once was.</p>
+        <p class="biz-fact">Prom dresses and styling for Detroit girls &nbsp;•&nbsp; Community events year round</p>
+      </div>
+    </div>
+
+    <div class="biz-card">
+      <img src="https://i.ytimg.com/vi/_DiXsMf58Uc/maxresdefault.jpg" alt="Kash Doll in the Power video" loading="lazy">
+      <div class="biz-body">
+        <span class="tag">Recognition</span>
+        <h3>Awards and Honors</h3>
+        <p><strong>Spirit of Detroit Award</strong>, 2019, for charitable work through Kash Doll Enterprises. <strong>BET Award nomination</strong>, Best Female Hip-Hop Artist, 2019. <strong>BMI Social Star Award</strong>. <strong>"Issa Wave Award"</strong> at the BET Social Awards. <strong>313 Best in Black Detroit, Best Local Rapper</strong>, 2018. BET Hip Hop Award cypher performer in 2018 and 2019.</p>
+        <p class="biz-fact">Remy Ma brought her out at Hot 97 Summer Jam &nbsp;•&nbsp; Afro Nation Detroit 2024 &nbsp;•&nbsp; Billboard Women in Music 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILM AND TV -->
+<section id="acting">
+  <div class="wrap">
+    <div class="film-head">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow">On screen</p>
+        <h2>Film <em>and TV</em></h2>
+        <p class="sub">Acting since Detroit indie films in 2015. TV debut on Empire in 2020. Four seasons as Monique on Starz's BMF.</p>
+      </div>
+      <div class="carousel-btns">
+        <button type="button" onclick="document.getElementById('film-carousel').scrollBy({left:-320,behavior:'smooth'})">Prev</button>
+        <button type="button" onclick="document.getElementById('film-carousel').scrollBy({left:320,behavior:'smooth'})">Next</button>
+      </div>
+    </div>
+    <div class="film-carousel" id="film-carousel">
+      <div class="f-card">
+        <a href="https://www.youtube.com/watch?v=3Hp8e-CF_nc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/3Hp8e-CF_nc/maxresdefault.jpg" alt="BMF Season 4 trailer" loading="lazy"></a>
+        <div class="f-body">
+          <span class="tag">Starz &nbsp;•&nbsp; 2021 to 2025</span>
+          <h3>BMF &nbsp;•&nbsp; Monique</h3>
+          <p>A paralegal for Detroit's biggest defense attorney and a single mom, caught between Big Meech and Lamar. She auditioned for Keto. Showrunner Randy Huggins and director Tasha Smith called back: Monique fit her better. Recurring in seasons 1 and 2, <strong>main cast in season 4</strong>. Monique is based on a real woman, name changed, who has since passed. Kash spoke with the family and got their approval.</p>
+          <div class="f-meta">4 seasons &nbsp;•&nbsp; 38 episodes &nbsp;•&nbsp; EP Curtis "50 Cent" Jackson</div>
         </div>
       </div>
-      <p>Her debut album <strong>Stacked</strong> (2019) entered the Billboard 200 at No. 76. That same year she toured with Meek Mill and earned the <strong>Spirit of Detroit Award</strong> for her charitable work through Kash Doll Enterprises. In 2020 she stood beside Eminem and Royce Da 5'9" on Big Sean's <strong>"Friday Night Cypher."</strong> In 2023 she linked with DJ Drama for <strong>Back on Dexter: A Gangsta Grillz Mixtape</strong>, with Icewear Vezzo and Babyface Ray.</p>
-      <p>She is a mother of two, a BET Award nominee, and a multi-platinum artist who never left her city behind.</p>
-      <ul class="roots-milestones">
-        <li><b>2014</b><span>First Detroit gigs, mixtapes out the trunk</span></li>
-        <li><b>2018</b><span>"Ice Me Out" goes Gold, Republic deal</span></li>
-        <li><b>2019</b><span>Stacked debuts at No. 76 on the Billboard 200</span></li>
-        <li><b>2024</b><span>The Last Doll, her highest-charting album</span></li>
-      </ul>
+      <div class="f-card">
+        <div class="f-type"><span>Empire</span></div>
+        <div class="f-body">
+          <span class="tag">Fox &nbsp;•&nbsp; 2020</span>
+          <h3>Empire &nbsp;•&nbsp; Herself</h3>
+          <p>Her TV debut. Two episodes in the sixth and final season: <strong>"We Got Us"</strong> on April 7, 2020, and <strong>"Home Is on the Way"</strong> on April 21, 2020.</p>
+          <div class="f-meta">Season 6 &nbsp;•&nbsp; 2 episodes &nbsp;•&nbsp; TV debut</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Diarra from Detroit</span></div>
+        <div class="f-body">
+          <span class="tag">BET+ &nbsp;•&nbsp; 2024</span>
+          <h3>Diarra from Detroit &nbsp;•&nbsp; Maisha</h3>
+          <p>Recurring role as <strong>Maisha</strong> in the BET+ comedy-drama about a Detroit teacher turned amateur detective, starring Diarra Kilpatrick.</p>
+          <div class="f-meta">Recurring &nbsp;•&nbsp; BET+</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Reasonable Doubt</span></div>
+        <div class="f-body">
+          <span class="tag">Hulu &nbsp;•&nbsp; 2025</span>
+          <h3>Reasonable Doubt &nbsp;•&nbsp; Nisha McCall</h3>
+          <p><strong>Four episodes</strong> in season 3 as Nisha McCall, including "Ignorant Sh*t," which aired October 30, 2025. The legal drama stars Emayatzy Corinealdi.</p>
+          <div class="f-meta">Season 3 &nbsp;•&nbsp; 4 episodes &nbsp;•&nbsp; Hulu</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>I Got the Hook Up 2</span></div>
+        <div class="f-body">
+          <span class="tag">Film &nbsp;•&nbsp; 2019</span>
+          <h3>I Got the Hook Up 2 &nbsp;•&nbsp; Leslie</h3>
+          <p>Played <strong>Leslie</strong> in the Master P sequel, released July 2019. The film grossed $252,000 worldwide.</p>
+          <div class="f-meta">Feature film &nbsp;•&nbsp; Master P</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Buffed Up</span></div>
+        <div class="f-body">
+          <span class="tag">Film &nbsp;•&nbsp; 2019</span>
+          <h3>Buffed Up! &nbsp;•&nbsp; Rena</h3>
+          <p>Played <strong>Rena</strong> in the 2019 film Buffed Up!, one of her early screen roles alongside the music.</p>
+          <div class="f-meta">Feature film &nbsp;•&nbsp; 2019</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Birds of a Feather 2</span></div>
+        <div class="f-body">
+          <span class="tag">Film &nbsp;•&nbsp; 2018</span>
+          <h3>Birds of a Feather 2 &nbsp;•&nbsp; Trish</h3>
+          <p>Played <strong>Trish</strong>, credited as Arkeisha Kash Doll Knight. The indie film was made on a $450,000 budget.</p>
+          <div class="f-meta">Feature film &nbsp;•&nbsp; 2018</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>2Eleven</span></div>
+        <div class="f-body">
+          <span class="tag">Film &nbsp;•&nbsp; 2015</span>
+          <h3>2Eleven &nbsp;•&nbsp; Just</h3>
+          <p>Her first film role. Played <strong>Just</strong> in the Detroit indie film 2Eleven, the same year her first mixtape dropped.</p>
+          <div class="f-meta">Feature film &nbsp;•&nbsp; Detroit indie</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Baddies Midwest</span></div>
+        <div class="f-body">
+          <span class="tag">Zeus &nbsp;•&nbsp; 2024</span>
+          <h3>Baddies Midwest &nbsp;•&nbsp; Judge</h3>
+          <p>Appeared as herself, a <strong>judge</strong> on the Baddies Midwest and Gone Wild auditions in 2024.</p>
+          <div class="f-meta">Reality &nbsp;•&nbsp; Zeus Network</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Ladies First</span></div>
+        <div class="f-body">
+          <span class="tag">Netflix &nbsp;•&nbsp; 2023</span>
+          <h3>Ladies First &nbsp;•&nbsp; Herself</h3>
+          <p>Appeared as herself in <strong>Ladies First: A Story of Women in Hip-Hop</strong>, the Netflix documentary series on women who built the genre.</p>
+          <div class="f-meta">Documentary &nbsp;•&nbsp; Netflix</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Wild 'N Out</span></div>
+        <div class="f-body">
+          <span class="tag">TV &nbsp;•&nbsp; 2026</span>
+          <h3>Wild 'N Out &nbsp;•&nbsp; Musical Guest</h3>
+          <p>Performed <strong>"Ice Me Out"</strong> as the musical guest on Wild 'N Out in 2026, on the Studio City stage in Los Angeles.</p>
+          <div class="f-meta">Musical guest &nbsp;•&nbsp; 2026</div>
+        </div>
+      </div>
+      <div class="f-card">
+        <div class="f-type"><span>Married to Medicine</span></div>
+        <div class="f-body">
+          <span class="tag">Bravo &nbsp;•&nbsp; TV</span>
+          <h3>Married to Medicine &nbsp;•&nbsp; Herself</h3>
+          <p>Appeared as herself in the episode <strong>"Quad Gets Her Groove Back."</strong></p>
+          <div class="f-meta">Guest appearance &nbsp;•&nbsp; Bravo</div>
+        </div>
+      </div>
+    </div>
+    <div class="quote" style="margin-top:28px">
+      <p>"Being a part of this story on Starz with 50 Cent, man, it just feels amazing. It's something I can't explain. I'm just grateful for that opportunity."</p>
+      <small>Kash Doll, on BMF, HipHopDX</small>
     </div>
   </div>
 </section>
-
-<!-- ACTING -->
-<section class="acting" id="acting">
-  <div class="wrap">
-    <p class="eyebrow">On screen &nbsp;•&nbsp; Starz</p>
-    <div class="monique">Monique</div>
-    <span class="monique-note">the role that fit her better</span>
-    <div class="acting-grid">
-      <div>
-        <p>On Starz's <strong>BMF</strong>, Kash Doll plays <strong>Monique</strong>, a paralegal for the biggest defense attorney in Detroit and a strong single mom determined to give her daughters a better life. Monique is also one of Demetrius Flenory's lovers, and her firm's clients give Meech and Terry an edge in their rise through the streets.</p>
-        <p>She first auditioned for a different role, Keto. The producers called back and said Monique fit her better. She was right, and so were they. Monique ran recurring through seasons 1 and 2, and Kash Doll joined the <strong>main cast from season 4</strong>.</p>
-        <p>BMF is inspired by the true story of two brothers who rose from southwest Detroit in the late 1980s and built one of the most influential crime families in the country. It is executive produced by Curtis "50 Cent" Jackson.</p>
-      </div>
-      <div class="acting-card">
-        <span class="tape t1"></span>
-        <h3>Filmography</h3>
-        <p class="role">BMF <span>&nbsp;•&nbsp; Monique &nbsp;•&nbsp; 2021 to present &nbsp;•&nbsp; Starz</span></p>
-        <p class="role">Empire <span>&nbsp;•&nbsp; Herself &nbsp;•&nbsp; Guest appearance</span></p>
-        <p style="margin-top:18px">Kash Doll made her transition into acting in 2018 and has built the screen career alongside the music, never choosing one lane over the other.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TORN EDGE INTO CREAM -->
-<div class="torn torn-cream" aria-hidden="true"><svg viewBox="0 0 1200 40" preserveAspectRatio="none"><path d="M0,40 L0,24 L42,15 L84,28 L126,19 L168,30 L210,13 L252,26 L294,17 L336,29 L378,21 L420,14 L462,27 L504,18 L546,31 L588,15 L630,26 L672,19 L714,28 L756,12 L798,25 L840,17 L882,30 L924,16 L966,27 L1008,20 L1050,29 L1092,14 L1134,25 L1176,18 L1200,26 L1200,40 Z"/></svg></div>
 
 <!-- SHOWS -->
-<section class="shows" id="shows">
+<section class="shows on-cream" id="shows">
   <div class="wrap">
-    <div class="sec-head on-cream">
+    <div class="sec-head">
       <p class="eyebrow">Live</p>
       <h2>Next <em>Up</em></h2>
     </div>
 
     <div class="ticket">
-      <span class="tape t1"></span>
       <div class="next-date">
         <div class="mo">November</div>
         <div class="dy">28</div>
@@ -544,11 +1031,10 @@ footer .f-logo span{color:var(--gold)}
       <h3>The Last Doll Tour</h3>
       <span class="eyebrow">Completed &nbsp;•&nbsp; Her first headlining tour</span>
     </div>
-    <p class="tour-note">Brought to you by the Black Promoters Collective. Kicked off December 14, 2024 in her home city of Detroit, where the show sold out. The January California dates were postponed by the Los Angeles wildfires and rescheduled to May 29 and 31, 2025.</p>
-    <div class="taped-note"><span class="tape t1"></span>Detroit sold out first, obviously</div>
+    <p class="tour-note">Brought to you by the Black Promoters Collective. Kicked off December 14, 2024 in her home city of Detroit, where the show sold out at the Masonic Cathedral Theatre. The January California dates were postponed by the Los Angeles wildfires and rescheduled to May 29 and 31, 2025. Detroit got an encore show on March 9, 2025.</p>
     <div class="tour-list">
-      <div class="tour-col">
-        <div class="tour-row"><span class="d">Dec 14, 2024</span><span class="c">Detroit, MI</span><span class="v">Masonic Cathedral Theatre (Sold Out)</span></div>
+      <div>
+        <div class="tour-row"><span class="d">Dec 14, 2024</span><span class="c">Detroit, MI</span><span class="v">Masonic Cathedral Theatre <span class="sold">(Sold Out)</span></span></div>
         <div class="tour-row"><span class="d">Dec 15, 2024</span><span class="c">Cleveland, OH</span><span class="v">Agora Ballroom</span></div>
         <div class="tour-row"><span class="d">Dec 20, 2024</span><span class="c">Chicago, IL</span><span class="v">Ramova</span></div>
         <div class="tour-row"><span class="d">Dec 21, 2024</span><span class="c">St. Louis, MO</span><span class="v">The Hawthorn</span></div>
@@ -558,48 +1044,72 @@ footer .f-logo span{color:var(--gold)}
         <div class="tour-row"><span class="d">Feb 9, 2025</span><span class="c">Washington, DC</span><span class="v">The Howard Theatre</span></div>
         <div class="tour-row"><span class="d">Feb 15, 2025</span><span class="c">Atlanta, GA</span><span class="v">Center Stage</span></div>
       </div>
-      <div class="tour-col right">
+      <div>
         <div class="tour-row"><span class="d">Feb 16, 2025</span><span class="c">Charlotte, NC</span><span class="v">The Fillmore Charlotte</span></div>
         <div class="tour-row"><span class="d">Feb 20, 2025</span><span class="c">Memphis, TN</span><span class="v">Minglewood Hall</span></div>
         <div class="tour-row"><span class="d">Feb 21, 2025</span><span class="c">New Orleans, LA</span><span class="v">Joy Theater</span></div>
         <div class="tour-row"><span class="d">Feb 22, 2025</span><span class="c">Dallas, TX</span><span class="v">Studio at The Factory</span></div>
         <div class="tour-row"><span class="d">Feb 23, 2025</span><span class="c">Houston, TX</span><span class="v">Warehouse Live Midtown</span></div>
-        <div class="tour-row"><span class="d">Mar 9, 2025</span><span class="c">Detroit, MI</span><span class="v">Masonic Temple</span></div>
-        <div class="tour-row"><span class="d">May 29, 2025</span><span class="c">Los Angeles, CA</span><span class="v">The Fonda Theatre</span></div>
-        <div class="tour-row"><span class="d">May 31, 2025</span><span class="c">Berkeley, CA</span><span class="v">The UC Theatre</span></div>
+        <div class="tour-row"><span class="d">Mar 9, 2025</span><span class="c">Detroit, MI</span><span class="v">Masonic Temple (Encore)</span></div>
+        <div class="tour-row"><span class="d">May 29, 2025</span><span class="c">Los Angeles, CA</span><span class="v">The Fonda Theatre (Rescheduled)</span></div>
+        <div class="tour-row"><span class="d">May 31, 2025</span><span class="c">Berkeley, CA</span><span class="v">The UC Theatre (Rescheduled)</span></div>
       </div>
     </div>
-    <p class="shows-foot">2026 also brought hometown stops at Hart Plaza (June 19), the Fox Theatre (July 18) and the Aretha Franklin Amphitheatre (August 1), plus the Baddies and Bosses show in Kansas City (October 17) with BossMan Dlow, Plies, Kaliii and Skilla Baby.</p>
+    <p class="shows-foot">Before her own tour, Kash Doll opened for Meek Mill on The Motivation Tour in 2019, a 16-city run that stopped at the Fox Theatre in Detroit on March 9, 2019. In 2026 she played hometown stops at Hart Plaza (June 19), the Fox Theatre (July 18) and the Aretha Franklin Amphitheatre (August 1), plus the Baddies and Bosses show in Kansas City (October 17) with BossMan Dlow, Plies, Kaliii and Skilla Baby. She also performed at Afro Nation Detroit in 2024 and Hot 107.9 Birthday Bash in Atlanta in 2025.</p>
   </div>
 </section>
 
-<!-- MUSIC / FORMATS -->
-<section id="music">
+<!-- SHOP -->
+<section id="shop">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Get the music</p>
-      <h2>Own It. <em>Stream It.</em></h2>
-      <span class="scribble">a doll about her cash, a pretty girl about her money</span>
+      <p class="eyebrow">Own the music</p>
+      <h2>On Wax. <em>On Disc.</em></h2>
+      <p class="sub">Real formats, real prices, from the label store and the record shops that carry her. No password-locked store, no dead links.</p>
     </div>
-    <div class="formats-grid">
-      <div class="format-card left">
-        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/5c/9b/c55c9be0-68f5-3bc2-73f3-a10449aa0794/25351.jpg/600x600bb.jpg" alt="The Last Doll album cover">
-        <h3>The Last Doll &nbsp;•&nbsp; CD</h3>
-        <p>The sophomore album on compact disc, released January 10, 2025 via MNRK Music Group. Fourteen tracks, manufactured on demand.</p>
-        <a class="btn" href="https://tower.com/products/kash-doll-the-last-doll?variant=41366466691143" target="_blank" rel="noopener">Buy the CD</a>
+    <div class="shop-grid">
+      <div class="shop-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/5c/9b/c55c9be0-68f5-3bc2-73f3-a10449aa0794/25351.jpg/600x600bb.jpg" alt="The Last Doll album cover, hot pink vinyl edition" loading="lazy">
+        <div class="shop-body">
+          <span class="tag">Vinyl &nbsp;•&nbsp; MNRK Music Group</span>
+          <h3>The Last Doll &nbsp;•&nbsp; Hot Pink Vinyl</h3>
+          <p>Pressed on 140 gram hot pink vinyl. Spotify Fans First edition, officially licensed Kash Doll merchandise from the MNRK label store.</p>
+          <div class="price">$27.98</div>
+          <a class="btn" href="https://shop.mnrk.com/collections/all-1/products/kash-doll-the-last-doll-on-hot-pink-vinyl-spotify-fans-first" target="_blank" rel="noopener">Buy the vinyl</a>
+        </div>
       </div>
-      <div class="format-card right">
-        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c2/bf/be/c2bfbe8f-9980-0feb-7a8d-27b4599c3edf/19UMGIM88610.rgb.jpg/600x600bb.jpg" alt="Stacked album cover">
-        <h3>Stacked &nbsp;•&nbsp; The Debut</h3>
-        <p>Her 2019 debut album on Republic Records. Seventeen tracks including "Ready Set" with Big Sean and "No Lames" with Summer Walker. Billboard 200, No. 76.</p>
-        <ul class="stream-list" style="margin-top:6px">
-          <li><a href="https://open.spotify.com/artist/3u579Gdap91lMptBSdXTpf" target="_blank" rel="noopener"><span>Spotify</span><span>Listen</span></a></li>
-          <li><a href="https://music.apple.com/us/artist/kash-doll/912341859" target="_blank" rel="noopener"><span>Apple Music</span><span>Listen</span></a></li>
-          <li><a href="https://music.amazon.com/artists/B00N01LJBK/kash-doll" target="_blank" rel="noopener"><span>Amazon Music</span><span>Listen</span></a></li>
-          <li><a href="https://soundcloud.com/kashd" target="_blank" rel="noopener"><span>SoundCloud</span><span>Listen</span></a></li>
-          <li><a href="https://tidal.com/search?q=Kash%20Doll" target="_blank" rel="noopener"><span>Tidal</span><span>Search</span></a></li>
-        </ul>
+      <div class="shop-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c5/5c/9b/c55c9be0-68f5-3bc2-73f3-a10449aa0794/25351.jpg/600x600bb.jpg" alt="The Last Doll album cover, CD edition" loading="lazy">
+        <div class="shop-body">
+          <span class="tag">CD &nbsp;•&nbsp; Tower Records</span>
+          <h3>The Last Doll &nbsp;•&nbsp; CD</h3>
+          <p>The sophomore album on compact disc, released January 10, 2025 via MNRK Music Group. Fourteen tracks, manufactured on demand.</p>
+          <div class="price">$12.98</div>
+          <a class="btn" href="https://tower.com/products/kash-doll-the-last-doll?variant=41366466691143" target="_blank" rel="noopener">Buy the CD</a>
+        </div>
       </div>
+      <div class="shop-card">
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/7d/db/ef/7ddbef45-6a5b-eb52-ebdf-d2c1b60fd07c/634164351724.png/600x600bb.jpg" alt="Back on Dexter mixtape cover, CD edition" loading="lazy">
+        <div class="shop-body">
+          <span class="tag">CD &nbsp;•&nbsp; ImportCDs</span>
+          <h3>Back on Dexter &nbsp;•&nbsp; CD</h3>
+          <p>The DJ Drama hosted Gangsta Grillz mixtape on CD. Eleven tracks, Alliance manufactured on demand, explicit content.</p>
+          <div class="price">$11.54</div>
+          <a class="btn" href="https://www.importcds.com/kash-doll-back-on-dexter/634164696726" target="_blank" rel="noopener">Buy the CD</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stream-row">
+      <h3>Stream <span>Everywhere</span></h3>
+      <ul class="stream-list">
+        <li><a href="https://open.spotify.com/artist/3u579Gdap91lMptBSdXTpf" target="_blank" rel="noopener"><span>Spotify</span><span>Listen</span></a></li>
+        <li><a href="https://music.apple.com/us/artist/kash-doll/912341859" target="_blank" rel="noopener"><span>Apple Music</span><span>Listen</span></a></li>
+        <li><a href="https://music.amazon.com/artists/B00N01LJBK/kash-doll" target="_blank" rel="noopener"><span>Amazon Music</span><span>Listen</span></a></li>
+        <li><a href="https://soundcloud.com/kashd" target="_blank" rel="noopener"><span>SoundCloud</span><span>Listen</span></a></li>
+        <li><a href="https://tidal.com/search?q=Kash%20Doll" target="_blank" rel="noopener"><span>Tidal</span><span>Search</span></a></li>
+        <li><a href="https://www.youtube.com/channel/UCx5D4Lkkp8aIUBsTfiLpb-g" target="_blank" rel="noopener"><span>YouTube</span><span>Watch</span></a></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -609,7 +1119,6 @@ footer .f-logo span{color:var(--gold)}
   <div class="wrap">
     <p class="eyebrow">Follow Kash Doll</p>
     <h2>Everywhere She Is</h2>
-    <span class="scribble">tap in, she posts like she talks</span>
     <div class="social-links">
       <a href="https://www.instagram.com/kashdoll/" target="_blank" rel="noopener">Instagram<small>7.4M followers</small></a>
       <a href="https://www.tiktok.com/@kashdoll" target="_blank" rel="noopener">TikTok<small>@kashdoll</small></a>
@@ -625,7 +1134,6 @@ footer .f-logo span{color:var(--gold)}
   <div class="wrap">
     <p class="eyebrow">Kash Doll Enterprises &nbsp;•&nbsp; MNRK Music Group</p>
     <h2>If You're The Prize,<br><em>Why Does It Cost So Much?</em></h2>
-    <span class="scribble">stream it, then stream it again</span>
     <p>Stream "I'm The Prize" featuring Ebony Riley, out now on every platform. The Last Doll is out now. Detroit's own is just getting started.</p>
     <a class="btn" href="https://kashdoll.ffm.to/imtheprize" target="_blank" rel="noopener">Stream I'm The Prize</a>
   </div>
