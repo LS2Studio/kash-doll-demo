@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Picker | Kash Doll Demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#161016;
+    --bg2:#1f181f;
+    --pink:#f9a8d4;
+    --pink-soft:#fbcfe8;
+    --pink-deep:#bc3a72;
+    --cream:#fbeef3;
+    --text:#f5eef1;
+    --muted:#c9b8bd;
+    --line:rgba(249,168,212,.30);
+    --serif:'Cormorant Garamond', Georgia, serif;
+    --sans:'Outfit', system-ui, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 60px}
+  .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+  .topbar a{color:var(--pink);text-decoration:none;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+  .topbar span{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  h1{font-family:var(--serif);font-weight:500;font-size:2.6rem;line-height:1.1;margin-bottom:8px}
+  h1 em{color:var(--pink);font-style:italic}
+  .intro{color:var(--muted);max-width:640px;margin-bottom:10px}
+  .note{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:18px 0 34px;font-size:1rem}
+  .note strong{color:var(--pink-soft);font-weight:500}
+  h2{font-family:var(--serif);font-weight:500;font-size:1.7rem;margin:38px 0 4px}
+  h2 em{color:var(--pink);font-style:italic}
+  .sec-sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+  .grid{display:grid;grid-template-columns:1fr;gap:22px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:960px){.grid{grid-template-columns:1fr 1fr 1fr}}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .num{position:absolute;top:12px;left:12px;background:var(--pink);color:#161016;font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.45)}
+  .thumb{position:relative;display:block;background:#0d0a0d}
+  .thumb img{display:block;width:100%;height:280px;object-fit:cover}
+  .thumb.tall img{height:360px}
+  .cap{padding:16px 16px 18px}
+  .cap h3{font-family:var(--serif);font-weight:600;font-size:1.25rem;line-height:1.25;margin-bottom:6px}
+  .cap p{font-size:.92rem;color:var(--muted)}
+  .cap .use{margin-top:10px;font-size:.85rem;color:var(--pink-soft);letter-spacing:.04em}
+  .cap .use b{color:var(--pink);font-weight:600}
+  .ref{margin-top:44px;border-top:1px solid var(--line);padding-top:28px}
+  .ref .grid{grid-template-columns:1fr}
+  @media(min-width:640px){.ref .grid{grid-template-columns:1fr 1fr}}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a href="index.html">&larr; Back to the demo</a>
+    <span>Photo Picker</span>
+  </div>
+
+  <h1>Pick better <em>pictures</em></h1>
+  <p class="intro">Fifteen real photos of Kash Doll, all checked and loading. Newest era first, then live shows, videos, acting, and press.</p>
+  <div class="note"><strong>How this works:</strong> Tap an image to view it full size. Tell Risha's assistant the numbers you want and where they should go.</div>
+
+  <h2>Hero and <em>glamour</em></h2>
+  <p class="sec-sub">Portrait and fashion shots. The strongest picks for the big hero photo.</p>
+  <div class="grid">
+
+    <div class="card">
+      <a class="thumb tall" href="https://yoraps.com/wp-content/uploads/2026/11/kd.png" target="_blank" rel="noopener"><span class="num">1</span><img src="https://yoraps.com/wp-content/uploads/2026/11/kd.png" alt="Kash Doll glamour portrait close-up" loading="lazy"></a>
+      <div class="cap">
+        <h3>Glamour portrait, close-up</h3>
+        <p>High ponytail, gold halter top, big diamond ring, tattoos showing. YoRaps, November 2026.</p>
+        <p class="use"><b>Suggested use:</b> Hero</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb tall" href="https://cdn.sanity.io/images/melg60xn/production/14a1a437812ac043b3f4701b6b7faa3de1986ac1-2400x2400.jpg" target="_blank" rel="noopener"><span class="num">2</span><img src="https://cdn.sanity.io/images/melg60xn/production/14a1a437812ac043b3f4701b6b7faa3de1986ac1-2400x2400.jpg" alt="Kash Doll in red satin gown holding a crown, I'm The Prize single art" loading="lazy"></a>
+      <div class="cap">
+        <h3>Red gown and crown</h3>
+        <p>Official I'm The Prize single art. Red satin gown with feather trim, holding a jeweled crown, back tattoo on show, inside a glass display case. KAZI Magazine, November 2026.</p>
+        <p class="use"><b>Suggested use:</b> Hero or Music feature</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://shinemycrown.com/wp-content/uploads/2026/11/Kash-Doll.jpg" target="_blank" rel="noopener"><span class="num">3</span><img src="https://shinemycrown.com/wp-content/uploads/2026/11/Kash-Doll.jpg" alt="Kash Doll in a white bathtub in a pink fur room" loading="lazy"></a>
+      <div class="cap">
+        <h3>Pink room, white tub</h3>
+        <p>Pink fur room, white bathtub, white fur coat, layered diamond chains and stacks of bracelets. ShineMyCrown, November 2026.</p>
+        <p class="use"><b>Suggested use:</b> Hero or Gallery</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://i.ytimg.com/vi/VxXRkTkZL5w/maxresdefault.jpg" target="_blank" rel="noopener"><span class="num">4</span><img src="https://i.ytimg.com/vi/VxXRkTkZL5w/maxresdefault.jpg" alt="Kash Doll in all white, No Lames artwork" loading="lazy"></a>
+      <div class="cap">
+        <h3>All white, long ponytail</h3>
+        <p>White outfit, ponytail held high, gold Kash Doll script logo. No Lames ft. Summer Walker art, 2019.</p>
+        <p class="use"><b>Suggested use:</b> Gallery. Note: the song title text is baked into the image.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>I'm The Prize, <em>November 2026</em></h2>
+  <p class="sec-sub">From the new video with Method Man. The freshest pictures she has.</p>
+  <div class="grid">
+
+    <div class="card">
+      <a class="thumb" href="https://townsquare.media/site/812/files/2026/11/attachment-kash-doll-method-man-im-the-prize-video.jpg?w=1200&format=natural" target="_blank" rel="noopener"><span class="num">5</span><img src="https://townsquare.media/site/812/files/2026/11/attachment-kash-doll-method-man-im-the-prize-video.jpg?w=1200&format=natural" alt="Kash Doll forehead to forehead with Method Man in the I'm The Prize video" loading="lazy"></a>
+      <div class="cap">
+        <h3>With Method Man, close</h3>
+        <p>Video still. Forehead to forehead with Method Man, leopard print and black lace. XXL, November 2026.</p>
+        <p class="use"><b>Suggested use:</b> Videos section or News card</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://balleralert.com/wp-content/uploads/2026/11/kash-doll-method-man.png" target="_blank" rel="noopener"><span class="num">6</span><img src="https://balleralert.com/wp-content/uploads/2026/11/kash-doll-method-man.png" alt="Kash Doll in a leopard dress at a kitchen counter with Method Man" loading="lazy"></a>
+      <div class="cap">
+        <h3>Kitchen scene</h3>
+        <p>Video still. Leopard dress at a kitchen counter, Method Man in a pinstripe shirt, film crew behind them. Baller Alert, November 2026.</p>
+        <p class="use"><b>Suggested use:</b> Videos section or Gallery</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://i.ytimg.com/vi/ufTiJbyVIhQ/hqdefault.jpg" target="_blank" rel="noopener"><span class="num">7</span><img src="https://i.ytimg.com/vi/ufTiJbyVIhQ/hqdefault.jpg" alt="Behind the scenes of I'm The Prize, makeup touch-up on set" loading="lazy"></a>
+      <div class="cap">
+        <h3>Behind the scenes on set</h3>
+        <p>Makeup touch-up on set, Method Man in a white shirt and tie, camera crew at work. YouTube, November 2026.</p>
+        <p class="use"><b>Suggested use:</b> Gallery. Note: smaller image, best for a small card.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Live <em>on stage</em></h2>
+  <p class="sec-sub">Real performance shots, not posed pictures.</p>
+  <div class="grid">
+
+    <div class="card">
+      <a class="thumb" href="https://hip-hopvibe.com/wp-content/uploads/2025/02/kash-doll-last-doll-tour-philly.jpg" target="_blank" rel="noopener"><span class="num">8</span><img src="https://hip-hopvibe.com/wp-content/uploads/2025/02/kash-doll-last-doll-tour-philly.jpg" alt="Kash Doll performing on The Last Doll Tour in Philadelphia in pink" loading="lazy"></a>
+      <div class="cap">
+        <h3>Last Doll Tour, Philly</h3>
+        <p>February 8, 2025. Pink sequin top and pink pants, performing on a pink couch on stage with two dancers. Hip-Hop Vibe.</p>
+        <p class="use"><b>Suggested use:</b> Shows section</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://i.ytimg.com/vi/9qzldVk-3Qo/maxresdefault.jpg" target="_blank" rel="noopener"><span class="num">9</span><img src="https://i.ytimg.com/vi/9qzldVk-3Qo/maxresdefault.jpg" alt="Kash Doll performing KD Diary live on The Real" loading="lazy"></a>
+      <div class="cap">
+        <h3>KD Diary live on The Real</h3>
+        <p>Black blazer, mic in hand, red and purple stage lights. 2019.</p>
+        <p class="use"><b>Suggested use:</b> Shows section or Gallery. Note: small The Real logo in the corner.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://i.ytimg.com/vi/Knt-zAyH1v8/maxresdefault.jpg" target="_blank" rel="noopener"><span class="num">10</span><img src="https://i.ytimg.com/vi/Knt-zAyH1v8/maxresdefault.jpg" alt="Kash Doll in big black shades at a studio mic, Thumbin performance" loading="lazy"></a>
+      <div class="cap">
+        <h3>Thumbin, studio performance</h3>
+        <p>Big black shades at a studio mic, diamond chains. Republic Studios, 2021.</p>
+        <p class="use"><b>Suggested use:</b> Videos section or Gallery. Note: small Vevo and On Air logos.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Videos and <em>Detroit</em></h2>
+  <p class="sec-sub">Stills from her videos, all Detroit energy.</p>
+  <div class="grid">
+
+    <div class="card">
+      <a class="thumb" href="https://i.ytimg.com/vi/25VCq8iHTVo/maxresdefault.jpg" target="_blank" rel="noopener"><span class="num">11</span><img src="https://i.ytimg.com/vi/25VCq8iHTVo/maxresdefault.jpg" alt="Kash Doll in a car in the KD Diary video" loading="lazy"></a>
+      <div class="cap">
+        <h3>KD Diary, in the car</h3>
+        <p>White fur, gold hair clips, riding through Detroit. Her autobiographical video, 2019.</p>
+        <p class="use"><b>Suggested use:</b> Detroit Roots or Gallery</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://i.ytimg.com/vi/EybWYcz8eLc/maxresdefault.jpg" target="_blank" rel="noopener"><span class="num">12</span><img src="https://i.ytimg.com/vi/EybWYcz8eLc/maxresdefault.jpg" alt="Kash Doll holding a Detroit Police Pretty Mobb board in the Mobb'n video" loading="lazy"></a>
+      <div class="cap">
+        <h3>Mobb'n mugshot board</h3>
+        <p>Smiling, holding a Detroit Police Pretty Mobb board. 2019.</p>
+        <p class="use"><b>Suggested use:</b> Gallery or Detroit Roots</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb" href="https://i.ytimg.com/vi/BYUzAfiqTMk/maxresdefault.jpg" target="_blank" rel="noopener"><span class="num">13</span><img src="https://i.ytimg.com/vi/BYUzAfiqTMk/maxresdefault.jpg" alt="Kash Doll posing by a red sports car in the Comfy visualizer" loading="lazy"></a>
+      <div class="cap">
+        <h3>Comfy, red car</h3>
+        <p>White top, black jacket, chunky chains, posing by a red sports car at dusk. 2024.</p>
+        <p class="use"><b>Suggested use:</b> Gallery. Note: small Vevo logo.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Acting and <em>press</em></h2>
+  <p class="sec-sub">TV and magazine proof.</p>
+  <div class="grid">
+
+    <div class="card">
+      <a class="thumb" href="https://hip-hopvibe.com/wp-content/uploads/2025/10/bmf-season-4-1.jpg" target="_blank" rel="noopener"><span class="num">14</span><img src="https://hip-hopvibe.com/wp-content/uploads/2025/10/bmf-season-4-1.jpg" alt="BMF season 4 cast still with Kash Doll as Monique" loading="lazy"></a>
+      <div class="cap">
+        <h3>BMF Season 4</h3>
+        <p>Kash Doll as Monique in black leather and sunglasses, with Lil Meech and Da'Vinchi. Hip-Hop Vibe, 2025.</p>
+        <p class="use"><b>Suggested use:</b> Film and TV section</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a class="thumb tall" href="https://i0.wp.com/imprintent.org/wp-content/uploads/2025/06/bec1c50a-c840-7174-5391-e4c0636b71f3.jpg" target="_blank" rel="noopener"><span class="num">15</span><img src="https://i0.wp.com/imprintent.org/wp-content/uploads/2025/06/bec1c50a-c840-7174-5391-e4c0636b71f3.jpg" alt="Kash Doll on the cover of Music Connection magazine, July 2025" loading="lazy"></a>
+      <div class="cap">
+        <h3>Music Connection cover</h3>
+        <p>Cover star, July 2025. Billed inside as the Queen of Motor City Hip-Hop.</p>
+        <p class="use"><b>Suggested use:</b> Bio section or News</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ref">
+    <h2>For <em>reference</em></h2>
+    <p class="sec-sub">The photo currently on the site, so you can compare.</p>
+    <div class="grid">
+      <div class="card">
+        <a class="thumb" href="kash-doll-2021.png" target="_blank" rel="noopener"><img src="kash-doll-2021.png" alt="Current hero photo of Kash Doll from 2021" loading="lazy"></a>
+        <div class="cap">
+          <h3>Current hero photo</h3>
+          <p>Already on the site. Kash Doll in 2021, Wikimedia Commons.</p>
+          <p class="use"><b>Not a pick.</b> Shown here for comparison only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Photo picker for the Kash Doll demo. Not part of the demo site.</footer>
+
+</div>
+</body>
+</html>
